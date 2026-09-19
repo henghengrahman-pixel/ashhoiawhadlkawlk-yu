@@ -1,0 +1,9 @@
+{
+  "mode": "synthetic-context-size-benchmark",
+  "note": "Character-size comparison of normalizeAgentInput for the same intentionally oversized synthetic context. This is not a provider token-billing measurement.",
+  "baseline_serialized_context_chars": 447129,
+  "optimized_serialized_context_chars": 126384,
+  "character_reduction_percent": 71.7,
+  "baseline_recent_messages": 80,
+  "optimized_recent_messages": 32
+}

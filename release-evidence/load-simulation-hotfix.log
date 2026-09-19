@@ -1,0 +1,79 @@
+
+> livechat-ai-railway@1.32.3 test:load
+> node scripts/load-simulation.mjs
+
+{
+  "ok": true,
+  "mode": "mock-fixture-simulation",
+  "note": "No real LiveChat/OpenAI/Telegram credentials are used by this load simulation.",
+  "results": [
+    {
+      "mode": "mock-fixture-simulation",
+      "activeConversations": 100,
+      "inputEvents": 400,
+      "processedEvents": 400,
+      "outboundSent": 400,
+      "duplicateIngress": 2,
+      "retries": 2,
+      "queueDepthAfter": 0,
+      "maxInFlight": 64,
+      "concurrencyLimit": 64,
+      "activeAfter": 90,
+      "closedArchived": 10,
+      "heapDeltaBytes": 570512,
+      "durationMs": 2,
+      "assertions": "PASS"
+    },
+    {
+      "mode": "mock-fixture-simulation",
+      "activeConversations": 500,
+      "inputEvents": 2000,
+      "processedEvents": 2000,
+      "outboundSent": 2000,
+      "duplicateIngress": 10,
+      "retries": 6,
+      "queueDepthAfter": 0,
+      "maxInFlight": 64,
+      "concurrencyLimit": 64,
+      "activeAfter": 450,
+      "closedArchived": 50,
+      "heapDeltaBytes": 0,
+      "durationMs": 4,
+      "assertions": "PASS"
+    },
+    {
+      "mode": "mock-fixture-simulation",
+      "activeConversations": 1000,
+      "inputEvents": 4000,
+      "processedEvents": 4000,
+      "outboundSent": 4000,
+      "duplicateIngress": 20,
+      "retries": 11,
+      "queueDepthAfter": 0,
+      "maxInFlight": 64,
+      "concurrencyLimit": 64,
+      "activeAfter": 900,
+      "closedArchived": 100,
+      "heapDeltaBytes": 2388552,
+      "durationMs": 6,
+      "assertions": "PASS"
+    },
+    {
+      "mode": "mock-fixture-simulation",
+      "activeConversations": 5000,
+      "inputEvents": 20000,
+      "processedEvents": 20000,
+      "outboundSent": 20000,
+      "duplicateIngress": 100,
+      "retries": 52,
+      "queueDepthAfter": 0,
+      "maxInFlight": 64,
+      "concurrencyLimit": 64,
+      "activeAfter": 4500,
+      "closedArchived": 500,
+      "heapDeltaBytes": 7557704,
+      "durationMs": 27,
+      "assertions": "PASS"
+    }
+  ]
+}
