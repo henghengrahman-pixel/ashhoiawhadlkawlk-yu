@@ -1,0 +1,8 @@
+
+> livechat-ai-railway@1.32.3 audit
+> node scripts/release-audit.mjs
+
+Release audit OK
+Runtime JS files: 64
+ENV parity: 84/84
+Telegram callback handlers: 22/22

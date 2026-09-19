@@ -1,0 +1,4134 @@
+
+> livechat-ai-railway@1.32.3 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: archives snapshot prior session through resilient queue and normalized messages
+ok 1 - archives snapshot prior session through resilient queue and normalized messages
+  ---
+  duration_ms: 1.149464
+  type: 'test'
+  ...
+# Subtest: archives routes use cursor list, metadata detail and message paging
+ok 2 - archives routes use cursor list, metadata detail and message paging
+  ---
+  duration_ms: 0.473187
+  type: 'test'
+  ...
+# Subtest: normalizes canned response list and items
+ok 3 - normalizes canned response list and items
+  ---
+  duration_ms: 1.035023
+  type: 'test'
+  ...
+# Subtest: normalizes alternate canned response shapes
+ok 4 - normalizes alternate canned response shapes
+  ---
+  duration_ms: 1.260369
+  type: 'test'
+  ...
+# Subtest: promo LiveChat message triggers greeting even when URLs vary
+ok 5 - promo LiveChat message triggers greeting even when URLs vary
+  ---
+  duration_ms: 0.93925
+  type: 'test'
+  ...
+# Subtest: normal human agent reply is not an automatic greeting trigger
+ok 6 - normal human agent reply is not an automatic greeting trigger
+  ---
+  duration_ms: 0.220669
+  type: 'test'
+  ...
+# Subtest: auto greeting allowed only when no prior meaningful conversation exists
+ok 7 - auto greeting allowed only when no prior meaningful conversation exists
+  ---
+  duration_ms: 0.200369
+  type: 'test'
+  ...
+# Subtest: daypart follows configured timezone
+ok 8 - daypart follows configured timezone
+  ---
+  duration_ms: 26.481486
+  type: 'test'
+  ...
+# Subtest: greeting is natural and contains daypart
+ok 9 - greeting is natural and contains daypart
+  ---
+  duration_ms: 2.050537
+  type: 'test'
+  ...
+# Subtest: blocks sensitive auto reply without knowledge
+ok 10 - blocks sensitive auto reply without knowledge
+  ---
+  duration_ms: 3.157042
+  type: 'test'
+  ...
+# Subtest: blocks unverified success claim
+ok 11 - blocks unverified success claim
+  ---
+  duration_ms: 0.447972
+  type: 'test'
+  ...
+# Subtest: allows normal conversational reply
+ok 12 - allows normal conversational reply
+  ---
+  duration_ms: 2.439115
+  type: 'test'
+  ...
+# Subtest: Human Bridge untuk reset password, WD, deposit, bonus, dan gangguan
+ok 13 - Human Bridge untuk reset password, WD, deposit, bonus, dan gangguan
+  ---
+  duration_ms: 2.073097
+  type: 'test'
+  ...
+# Subtest: 1 single scheduler replaces parallel initial and regular learning workers
+ok 14 - 1 single scheduler replaces parallel initial and regular learning workers
+  ---
+  duration_ms: 1.459683
+  type: 'test'
+  ...
+# {"event":"learning_batch","reason":"manual","scanned":0,"created":0,"skipped":0,"failed":0,"cursor":null,"durationMs":20}
+# {"event":"learning_worker_error","transient":false,"error":"syntax error at or near X","failures":1,"durationMs":0}
+# Subtest: 2 two regular invocations are single-flight
+ok 15 - 2 two regular invocations are single-flight
+  ---
+  duration_ms: 21.85573
+  type: 'test'
+  ...
+# Subtest: 3 advisory lock failure skips safely
+ok 16 - 3 advisory lock failure skips safely
+  ---
+  duration_ms: 0.727159
+  type: 'test'
+  ...
+# Subtest: 4 cursor persistence is monotonic in SQL
+ok 17 - 4 cursor persistence is monotonic in SQL
+  ---
+  duration_ms: 0.203925
+  type: 'test'
+  ...
+# Subtest: 5 scanned one uses active delay not catchup delay
+ok 18 - 5 scanned one uses active delay not catchup delay
+  ---
+  duration_ms: 0.117196
+  type: 'test'
+  ...
+# Subtest: 6 full batch uses catch-up delay
+ok 19 - 6 full batch uses catch-up delay
+  ---
+  duration_ms: 0.099298
+  type: 'test'
+  ...
+# Subtest: 7 idle uses slow delay
+ok 20 - 7 idle uses slow delay
+  ---
+  duration_ms: 0.347483
+  type: 'test'
+  ...
+# Subtest: 8 transient DB failures back off
+ok 21 - 8 transient DB failures back off
+  ---
+  duration_ms: 0.21574
+  type: 'test'
+  ...
+# Subtest: 9 permanent failure surfaces ERROR status
+ok 22 - 9 permanent failure surfaces ERROR status
+  ---
+  duration_ms: 1.140861
+  type: 'test'
+  ...
+# Subtest: 10 shutdown path clears background timers
+ok 23 - 10 shutdown path clears background timers
+  ---
+  duration_ms: 0.633599
+  type: 'test'
+  ...
+# Subtest: 11 scheduler does not create new learning timer after stop
+ok 24 - 11 scheduler does not create new learning timer after stop
+  ---
+  duration_ms: 8.040582
+  type: 'test'
+  ...
+# {"event":"learning_batch","reason":"manual","scanned":0,"created":0,"skipped":0,"failed":0,"cursor":null,"durationMs":15}
+# Subtest: 12 active worker gets bounded graceful finish
+ok 25 - 12 active worker gets bounded graceful finish
+  ---
+  duration_ms: 15.22501
+  type: 'test'
+  ...
+# Subtest: 13 archive retry is recursive timeout single-flight
+ok 26 - 13 archive retry is recursive timeout single-flight
+  ---
+  duration_ms: 0.872941
+  type: 'test'
+  ...
+# Subtest: 14 learning logs are one-line structured JSON
+ok 27 - 14 learning logs are one-line structured JSON
+  ---
+  duration_ms: 0.358136
+  type: 'test'
+  ...
+# Subtest: 15 no-op batches are heartbeat sampled
+ok 28 - 15 no-op batches are heartbeat sampled
+  ---
+  duration_ms: 0.242502
+  type: 'test'
+  ...
+# Subtest: 16 manual Run Now uses same scheduler
+ok 29 - 16 manual Run Now uses same scheduler
+  ---
+  duration_ms: 0.226112
+  type: 'test'
+  ...
+# Subtest: 17 learning disabled does not scan
+ok 30 - 17 learning disabled does not scan
+  ---
+  duration_ms: 0.207667
+  type: 'test'
+  ...
+# Subtest: 18 enabled learning preserves cursor-backed scanner
+ok 31 - 18 enabled learning preserves cursor-backed scanner
+  ---
+  duration_ms: 0.368993
+  type: 'test'
+  ...
+# {"event":"learning_batch","reason":"manual","scanned":0,"created":0,"skipped":0,"failed":0,"cursor":null,"durationMs":20}
+# Subtest: 19 two replica simulation only lock holder scans
+ok 32 - 19 two replica simulation only lock holder scans
+  ---
+  duration_ms: 20.560244
+  type: 'test'
+  ...
+# Subtest: 20 boot starts user-facing server before low-priority learning scheduler
+ok 33 - 20 boot starts user-facing server before low-priority learning scheduler
+  ---
+  duration_ms: 0.316459
+  type: 'test'
+  ...
+# Subtest: canned sync exposes timer stop for graceful shutdown
+ok 34 - canned sync exposes timer stop for graceful shutdown
+  ---
+  duration_ms: 0.099276
+  type: 'test'
+  ...
+# Subtest: database advisory lock uses dedicated pooled session and unlocks in finally
+ok 35 - database advisory lock uses dedicated pooled session and unlocks in finally
+  ---
+  duration_ms: 0.302795
+  type: 'test'
+  ...
+# Subtest: regular learning has bounded time budget and sequential processing
+ok 36 - regular learning has bounded time budget and sequential processing
+  ---
+  duration_ms: 0.258633
+  type: 'test'
+  ...
+# Subtest: normalize get_chat wrapper
+ok 37 - normalize get_chat wrapper
+  ---
+  duration_ms: 1.271356
+  type: 'test'
+  ...
+# Subtest: extract text from common LiveChat shapes
+ok 38 - extract text from common LiveChat shapes
+  ---
+  duration_ms: 16.133989
+  type: 'test'
+  ...
+# Subtest: mock LiveChat list/get/send integration
+ok 39 - mock LiveChat list/get/send integration
+  ---
+  duration_ms: 64.643091
+  type: 'test'
+  ...
+# Subtest: my_active keeps followed active chats only
+ok 40 - my_active keeps followed active chats only
+  ---
+  duration_ms: 2.121919
+  type: 'test'
+  ...
+# Subtest: fallback keeps active when is_followed absent
+ok 41 - fallback keeps active when is_followed absent
+  ---
+  duration_ms: 0.553849
+  type: 'test'
+  ...
+# Subtest: normalizes LiveChat chats_summary response
+ok 42 - normalizes LiveChat chats_summary response
+  ---
+  duration_ms: 0.800303
+  type: 'test'
+  ...
+# Subtest: keeps compatibility with chats response
+ok 43 - keeps compatibility with chats response
+  ---
+  duration_ms: 0.185352
+  type: 'test'
+  ...
+# Subtest: basic auth uses account id and PAT
+ok 44 - basic auth uses account id and PAT
+  ---
+  duration_ms: 1.466166
+  type: 'test'
+  ...
+# Subtest: extracts sorted message events
+ok 45 - extracts sorted message events
+  ---
+  duration_ms: 13.910819
+  type: 'test'
+  ...
+# Subtest: 01 normalize whitespace
+ok 46 - 01 normalize whitespace
+  ---
+  duration_ms: 1.834881
+  type: 'test'
+  ...
+# Subtest: 02 stable json key order
+ok 47 - 02 stable json key order
+  ---
+  duration_ms: 0.420574
+  type: 'test'
+  ...
+# Subtest: 03 fingerprint is deterministic
+ok 48 - 03 fingerprint is deterministic
+  ---
+  duration_ms: 1.598059
+  type: 'test'
+  ...
+# Subtest: 04 fingerprint ignores case for string content
+ok 49 - 04 fingerprint ignores case for string content
+  ---
+  duration_ms: 0.30675
+  type: 'test'
+  ...
+# Subtest: 05 different collections produce different fingerprints
+ok 50 - 05 different collections produce different fingerprints
+  ---
+  duration_ms: 0.375562
+  type: 'test'
+  ...
+# Subtest: 06 knowledge CRUD route
+ok 51 - 06 knowledge CRUD route
+  ---
+  duration_ms: 0.361998
+  type: 'test'
+  ...
+# Subtest: 07 knowledge export route
+ok 52 - 07 knowledge export route
+  ---
+  duration_ms: 0.243614
+  type: 'test'
+  ...
+# Subtest: 08 knowledge import route
+ok 53 - 08 knowledge import route
+  ---
+  duration_ms: 0.129627
+  type: 'test'
+  ...
+# Subtest: 09 duplicate reject implemented
+ok 54 - 09 duplicate reject implemented
+  ---
+  duration_ms: 0.367525
+  type: 'test'
+  ...
+# Subtest: 10 partial duplicate counters implemented
+ok 55 - 10 partial duplicate counters implemented
+  ---
+  duration_ms: 0.49774
+  type: 'test'
+  ...
+# Subtest: 11 delete all requires typed confirmation
+ok 56 - 11 delete all requires typed confirmation
+  ---
+  duration_ms: 0.658251
+  type: 'test'
+  ...
+# Subtest: 12 responses table separate from canned
+ok 57 - 12 responses table separate from canned
+  ---
+  duration_ms: 0.139311
+  type: 'test'
+  ...
+# Subtest: 13 responses retrieved by dedicated service
+ok 58 - 13 responses retrieved by dedicated service
+  ---
+  duration_ms: 0.09487
+  type: 'test'
+  ...
+# Subtest: 14 canned not injected into AI response source
+ok 59 - 14 canned not injected into AI response source
+  ---
+  duration_ms: 0.421302
+  type: 'test'
+  ...
+# Subtest: 15 rules have priority
+ok 60 - 15 rules have priority
+  ---
+  duration_ms: 0.097775
+  type: 'test'
+  ...
+# Subtest: 16 rules have stop processing
+ok 61 - 16 rules have stop processing
+  ---
+  duration_ms: 0.163575
+  type: 'test'
+  ...
+# Subtest: 17 conflict detector compares conditions
+ok 62 - 17 conflict detector compares conditions
+  ---
+  duration_ms: 0.080694
+  type: 'test'
+  ...
+# Subtest: 18 conflict detector does not auto delete
+ok 63 - 18 conflict detector does not auto delete
+  ---
+  duration_ms: 0.08841
+  type: 'test'
+  ...
+# Subtest: 19 important import export uses shared engine
+ok 64 - 19 important import export uses shared engine
+  ---
+  duration_ms: 0.066391
+  type: 'test'
+  ...
+# Subtest: 20 supplies import export uses shared engine
+ok 65 - 20 supplies import export uses shared engine
+  ---
+  duration_ms: 0.061337
+  type: 'test'
+  ...
+# Subtest: 21 content import uses transaction
+ok 66 - 21 content import uses transaction
+  ---
+  duration_ms: 0.065514
+  type: 'test'
+  ...
+# Subtest: 22 fatal import rolls back
+ok 67 - 22 fatal import rolls back
+  ---
+  duration_ms: 0.137152
+  type: 'test'
+  ...
+# Subtest: 23 import history exists
+ok 68 - 23 import history exists
+  ---
+  duration_ms: 0.112089
+  type: 'test'
+  ...
+# Subtest: 24 data versioning exists
+ok 69 - 24 data versioning exists
+  ---
+  duration_ms: 0.073336
+  type: 'test'
+  ...
+# Subtest: 25 sync all bumps all collections
+ok 70 - 25 sync all bumps all collections
+  ---
+  duration_ms: 0.068231
+  type: 'test'
+  ...
+# Subtest: 26 sync all endpoint exists
+ok 71 - 26 sync all endpoint exists
+  ---
+  duration_ms: 0.067238
+  type: 'test'
+  ...
+# Subtest: 27 AI active to human allowed
+ok 72 - 27 AI active to human allowed
+  ---
+  duration_ms: 6.949646
+  type: 'test'
+  ...
+# Subtest: 28 human to AI allowed
+ok 73 - 28 human to AI allowed
+  ---
+  duration_ms: 0.106045
+  type: 'test'
+  ...
+# Subtest: 29 closed is terminal
+ok 74 - 29 closed is terminal
+  ---
+  duration_ms: 0.073473
+  type: 'test'
+  ...
+# Subtest: 30 invalid transition throws
+ok 75 - 30 invalid transition throws
+  ---
+  duration_ms: 1.792165
+  type: 'test'
+  ...
+# Subtest: 31 DB state column has required states
+ok 76 - 31 DB state column has required states
+  ---
+  duration_ms: 1.005907
+  type: 'test'
+  ...
+# Subtest: 32 takeover updates explicit state
+ok 77 - 32 takeover updates explicit state
+  ---
+  duration_ms: 4.198269
+  type: 'test'
+  ...
+# Subtest: 33 return AI updates explicit state
+ok 78 - 33 return AI updates explicit state
+  ---
+  duration_ms: 1.946056
+  type: 'test'
+  ...
+# Subtest: 34 end chat updates explicit state
+ok 79 - 34 end chat updates explicit state
+  ---
+  duration_ms: 1.920464
+  type: 'test'
+  ...
+# Subtest: 35 conversations composer requires takeover
+ok 80 - 35 conversations composer requires takeover
+  ---
+  duration_ms: 0.433157
+  type: 'test'
+  ...
+# Subtest: 36 canned autocomplete reacts to hash token
+ok 81 - 36 canned autocomplete reacts to hash token
+  ---
+  duration_ms: 2.394844
+  type: 'test'
+  ...
+# Subtest: 37 canned keyboard navigation implemented
+ok 82 - 37 canned keyboard navigation implemented
+  ---
+  duration_ms: 0.218331
+  type: 'test'
+  ...
+# Subtest: 38 canned selection does not auto send
+ok 83 - 38 canned selection does not auto send
+  ---
+  duration_ms: 0.570816
+  type: 'test'
+  ...
+# Subtest: 39 canned page writes manual responses
+ok 84 - 39 canned page writes manual responses
+  ---
+  duration_ms: 0.112855
+  type: 'test'
+  ...
+# Subtest: 40 sync all UI is wired to backend
+ok 85 - 40 sync all UI is wired to backend
+  ---
+  duration_ms: 0.189378
+  type: 'test'
+  ...
+# Subtest: 41 conflict scan UI is wired
+ok 86 - 41 conflict scan UI is wired
+  ---
+  duration_ms: 0.100443
+  type: 'test'
+  ...
+# Subtest: 42 direct routes are registered
+ok 87 - 42 direct routes are registered
+  ---
+  duration_ms: 0.750468
+  type: 'test'
+  ...
+# Subtest: 43 direct route files exist
+ok 88 - 43 direct route files exist
+  ---
+  duration_ms: 0.35276
+  type: 'test'
+  ...
+# Subtest: 44 modular css is split
+ok 89 - 44 modular css is split
+  ---
+  duration_ms: 0.282355
+  type: 'test'
+  ...
+# Subtest: 45 modular js is split
+ok 90 - 45 modular js is split
+  ---
+  duration_ms: 0.208174
+  type: 'test'
+  ...
+# Subtest: normalizes slang/typo
+ok 91 - normalizes slang/typo
+  ---
+  duration_ms: 3.536629
+  type: 'test'
+  ...
+# Subtest: detect withdraw problem
+ok 92 - detect withdraw problem
+  ---
+  duration_ms: 1.330724
+  type: 'test'
+  ...
+# Subtest: detect deposit problem typo
+ok 93 - detect deposit problem typo
+  ---
+  duration_ms: 0.282958
+  type: 'test'
+  ...
+# Subtest: detect forgot password
+ok 94 - detect forgot password
+  ---
+  duration_ms: 0.127424
+  type: 'test'
+  ...
+# Subtest: detect min wd
+ok 95 - detect min wd
+  ---
+  duration_ms: 0.186989
+  type: 'test'
+  ...
+# Subtest: detect reset password slang
+ok 96 - detect reset password slang
+  ---
+  duration_ms: 0.242709
+  type: 'test'
+  ...
+# Subtest: loss complaint beats profanity and deposit context without transaction failure
+ok 97 - loss complaint beats profanity and deposit context without transaction failure
+  ---
+  duration_ms: 0.235748
+  type: 'test'
+  ...
+# Subtest: explicit deposit failure still beats loss complaint
+ok 98 - explicit deposit failure still beats loss complaint
+  ---
+  duration_ms: 0.258329
+  type: 'test'
+  ...
+# Subtest: conversations.css is runtime-loaded only by conversations page
+ok 99 - conversations.css is runtime-loaded only by conversations page
+  ---
+  duration_ms: 3.102746
+  type: 'test'
+  ...
+# Subtest: login.css is runtime-loaded only by login
+ok 100 - login.css is runtime-loaded only by login
+  ---
+  duration_ms: 0.826965
+  type: 'test'
+  ...
+# Subtest: legacy style.css and app.js are not loaded by production html
+ok 101 - legacy style.css and app.js are not loaded by production html
+  ---
+  duration_ms: 0.565847
+  type: 'test'
+  ...
+# Subtest: global hidden has one owner
+ok 102 - global hidden has one owner
+  ---
+  duration_ms: 0.546764
+  type: 'test'
+  ...
+# Subtest: table-wrap and cell-actions are owned by tables.css
+ok 103 - table-wrap and cell-actions are owned by tables.css
+  ---
+  duration_ms: 1.9674
+  type: 'test'
+  ...
+# Subtest: conversation selectors are page scoped and avoid root leakage
+ok 104 - conversation selectors are page scoped and avoid root leakage
+  ---
+  duration_ms: 0.507695
+  type: 'test'
+  ...
+# Subtest: conversation layout prevents overflow and keeps composer in flex flow
+ok 105 - conversation layout prevents overflow and keeps composer in flex flow
+  ---
+  duration_ms: 0.34698
+  type: 'test'
+  ...
+# Subtest: initial inbox skeleton is removed after first data render
+ok 106 - initial inbox skeleton is removed after first data render
+  ---
+  duration_ms: 0.197343
+  type: 'test'
+  ...
+# Subtest: message dedup uses store messageMap and send is single-flight
+ok 107 - message dedup uses store messageMap and send is single-flight
+  ---
+  duration_ms: 0.422057
+  type: 'test'
+  ...
+# Subtest: health route remains JSON service endpoint
+ok 108 - health route remains JSON service endpoint
+  ---
+  duration_ms: 0.587623
+  type: 'test'
+  ...
+# Subtest: target desktop viewport contracts are explicit
+ok 109 - target desktop viewport contracts are explicit
+  ---
+  duration_ms: 0.394998
+  type: 'test'
+  ...
+# Subtest: package-lock contains complete npm-ci inventory for pinned production dependencies
+ok 110 - package-lock contains complete npm-ci inventory for pinned production dependencies
+  ---
+  duration_ms: 5.99041
+  type: 'test'
+  ...
+# Subtest: pro gate blocks repeated question
+ok 111 - pro gate blocks repeated question
+  ---
+  duration_ms: 5.502397
+  type: 'test'
+  ...
+# Subtest: pro gate refuses asking known user id again
+ok 112 - pro gate refuses asking known user id again
+  ---
+  duration_ms: 0.429457
+  type: 'test'
+  ...
+# Subtest: pro gate allows confident normal reply
+ok 113 - pro gate allows confident normal reply
+  ---
+  duration_ms: 0.151352
+  type: 'test'
+  ...
+# Subtest: brain keeps professional structured case fields
+ok 114 - brain keeps professional structured case fields
+  ---
+  duration_ms: 1.199212
+  type: 'test'
+  ...
+# Subtest: conversation list uses server-side pagination and bounded limit
+ok 115 - conversation list uses server-side pagination and bounded limit
+  ---
+  duration_ms: 1.112988
+  type: 'test'
+  ...
+# Subtest: message history uses cursor pagination and preserves older scroll
+ok 116 - message history uses cursor pagination and preserves older scroll
+  ---
+  duration_ms: 0.297975
+  type: 'test'
+  ...
+# Subtest: polling has latest-request-wins abort and adaptive background schedule
+ok 117 - polling has latest-request-wins abort and adaptive background schedule
+  ---
+  duration_ms: 0.257135
+  type: 'test'
+  ...
+# Subtest: conversation actions expose loading state and state-specific buttons
+ok 118 - conversation actions expose loading state and state-specific buttons
+  ---
+  duration_ms: 0.149547
+  type: 'test'
+  ...
+# Subtest: canned shortcut remains human composer behavior and never auto sends
+ok 119 - canned shortcut remains human composer behavior and never auto sends
+  ---
+  duration_ms: 0.268617
+  type: 'test'
+  ...
+# Subtest: professional sidebar grouping and collapse exist
+ok 120 - professional sidebar grouping and collapse exist
+  ---
+  duration_ms: 0.229548
+  type: 'test'
+  ...
+# Subtest: conversation responsive structure keeps composer and detail drawer
+ok 121 - conversation responsive structure keeps composer and detail drawer
+  ---
+  duration_ms: 4.186889
+  type: 'test'
+  ...
+# Subtest: performance indexes cover inbox and cursor message access
+ok 122 - performance indexes cover inbox and cursor message access
+  ---
+  duration_ms: 0.382635
+  type: 'test'
+  ...
+# Subtest: /health stays JSON-only and operator health UI is /system-health
+ok 123 - /health stays JSON-only and operator health UI is /system-health
+  ---
+  duration_ms: 1.732216
+  type: 'test'
+  ...
+# Subtest: user actions supersede background inbox polling
+ok 124 - user actions supersede background inbox polling
+  ---
+  duration_ms: 0.50023
+  type: 'test'
+  ...
+# Subtest: background inbox poll is recursive and non-overlapping
+ok 125 - background inbox poll is recursive and non-overlapping
+  ---
+  duration_ms: 0.220987
+  type: 'test'
+  ...
+# Subtest: detail switching is latest-request-wins and timeout-safe
+ok 126 - detail switching is latest-request-wins and timeout-safe
+  ---
+  duration_ms: 0.204822
+  type: 'test'
+  ...
+# Subtest: default conversation detail does not load brain context
+ok 127 - default conversation detail does not load brain context
+  ---
+  duration_ms: 0.377622
+  type: 'test'
+  ...
+# Subtest: message realtime uses delta endpoint and event/id dedup
+ok 128 - message realtime uses delta endpoint and event/id dedup
+  ---
+  duration_ms: 0.397266
+  type: 'test'
+  ...
+# Subtest: closed conversation is removed from inbox and explicit CLOSED state exists
+ok 129 - closed conversation is removed from inbox and explicit CLOSED state exists
+  ---
+  duration_ms: 2.371838
+  type: 'test'
+  ...
+# Subtest: canned responses are lazy loaded only from \# input and DB search is bounded
+ok 130 - canned responses are lazy loaded only from \# input and DB search is bounded
+  ---
+  duration_ms: 0.869366
+  type: 'test'
+  ...
+# Subtest: canned autocomplete cancels stale searches
+ok 131 - canned autocomplete cancels stale searches
+  ---
+  duration_ms: 2.062145
+  type: 'test'
+  ...
+# Subtest: Conversations CSS is page-scoped and layout cannot horizontally overflow
+ok 132 - Conversations CSS is page-scoped and layout cannot horizontally overflow
+  ---
+  duration_ms: 1.635494
+  type: 'test'
+  ...
+# Subtest: legacy app.js and style.css remain inactive in production HTML
+ok 133 - legacy app.js and style.css remain inactive in production HTML
+  ---
+  duration_ms: 2.449665
+  type: 'test'
+  ...
+# Subtest: Docker uses package-lock and npm ci
+ok 134 - Docker uses package-lock and npm ci
+  ---
+  duration_ms: 0.323499
+  type: 'test'
+  ...
+# Subtest: graceful Railway shutdown closes listeners and DB pools
+ok 135 - graceful Railway shutdown closes listeners and DB pools
+  ---
+  duration_ms: 0.244755
+  type: 'test'
+  ...
+# Subtest: API fallback error handler is after centralized API error middleware
+ok 136 - API fallback error handler is after centralized API error middleware
+  ---
+  duration_ms: 0.2282
+  type: 'test'
+  ...
+# Subtest: active AI context is scoped by persisted session_key with greeting fallback only for legacy rows
+ok 137 - active AI context is scoped by persisted session_key with greeting fallback only for legacy rows
+  ---
+  duration_ms: 13.651748
+  type: 'test'
+  ...
+# Subtest: conversation detail and delta polling use current conversation session_key
+ok 138 - conversation detail and delta polling use current conversation session_key
+  ---
+  duration_ms: 0.270318
+  type: 'test'
+  ...
+# Subtest: archives list and history detail are independently scrollable
+ok 139 - archives list and history detail are independently scrollable
+  ---
+  duration_ms: 5.273929
+  type: 'test'
+  ...
+# Subtest: default Natural CS style avoids robotic language
+ok 140 - default Natural CS style avoids robotic language
+  ---
+  duration_ms: 1.922637
+  type: 'test'
+  ...
+# Subtest: style settings support no emoji and custom note
+ok 141 - style settings support no emoji and custom note
+  ---
+  duration_ms: 0.468288
+  type: 'test'
+  ...
+# Subtest: poller has system_enabled gate before LiveChat listChats
+ok 142 - poller has system_enabled gate before LiveChat listChats
+  ---
+  duration_ms: 1.640897
+  type: 'test'
+  ...
+# Subtest: engine blocks when LIVECHAT AI master is OFF
+ok 143 - engine blocks when LIVECHAT AI master is OFF
+  ---
+  duration_ms: 1.360912
+  type: 'test'
+  ...
+# Subtest: dashboard exposes LIVECHAT AI master switch
+ok 144 - dashboard exposes LIVECHAT AI master switch
+  ---
+  duration_ms: 3.661134
+  type: 'test'
+  ...
+# Subtest: Telegram client sends exact chat/topic/reply identifiers
+ok 145 - Telegram client sends exact chat/topic/reply identifiers
+  ---
+  duration_ms: 2.376253
+  type: 'test'
+  ...
+# Subtest: Bot token encryption roundtrip and masking
+ok 146 - Bot token encryption roundtrip and masking
+  ---
+  duration_ms: 2.8392
+  type: 'test'
+  ...
+# Subtest: needs-reply is based on the latest sender so both AI and human replies clear it
+ok 147 - needs-reply is based on the latest sender so both AI and human replies clear it
+  ---
+  duration_ms: 1.14674
+  type: 'test'
+  ...
+# Subtest: unanswered active chat renders a red reply-needed marker
+ok 148 - unanswered active chat renders a red reply-needed marker
+  ---
+  duration_ms: 0.368465
+  type: 'test'
+  ...
+# Subtest: v1.20.6 return-to-AI resumes latest unanswered member message
+ok 149 - v1.20.6 return-to-AI resumes latest unanswered member message
+  ---
+  duration_ms: 1.856386
+  type: 'test'
+  ...
+# Subtest: v1.20.6 resumed chat is never treated as new greeting candidate
+ok 150 - v1.20.6 resumed chat is never treated as new greeting candidate
+  ---
+  duration_ms: 1.143602
+  type: 'test'
+  ...
+# Subtest: v1.20.6 delayed promo greeting is suppressed after conversation starts
+ok 151 - v1.20.6 delayed promo greeting is suppressed after conversation starts
+  ---
+  duration_ms: 0.234343
+  type: 'test'
+  ...
+# Subtest: v1.20.8 noisy deposit complaint is deterministic before AI
+ok 152 - v1.20.8 noisy deposit complaint is deterministic before AI
+  ---
+  duration_ms: 11.077161
+  type: 'test'
+  ...
+# Subtest: v1.20.8 bootstrap forwards thread id and image attachments into engine
+ok 153 - v1.20.8 bootstrap forwards thread id and image attachments into engine
+  ---
+  duration_ms: 0.21727
+  type: 'test'
+  ...
+# Subtest: v1.20.8 normal poll path forwards thread id and attachments
+ok 154 - v1.20.8 normal poll path forwards thread id and attachments
+  ---
+  duration_ms: 0.116179
+  type: 'test'
+  ...
+# Subtest: v1.20.8 greeting is evaluated before operational workflow returns
+ok 155 - v1.20.8 greeting is evaluated before operational workflow returns
+  ---
+  duration_ms: 11.425136
+  type: 'test'
+  ...
+# Subtest: v1.20.8 greeting state exposes per-thread id
+ok 156 - v1.20.8 greeting state exposes per-thread id
+  ---
+  duration_ms: 0.377869
+  type: 'test'
+  ...
+# Subtest: v1.20.8 attachment image keeps recent deposit context locked
+ok 157 - v1.20.8 attachment image keeps recent deposit context locked
+  ---
+  duration_ms: 1.0747
+  type: 'test'
+  ...
+# Subtest: v1.24.9 loss/rungkad wins over profanity and deposit-as-context
+ok 158 - v1.24.9 loss/rungkad wins over profanity and deposit-as-context
+  ---
+  duration_ms: 5.846073
+  type: 'test'
+  ...
+# Subtest: v1.24.9 explicit deposit transaction failure still wins
+ok 159 - v1.24.9 explicit deposit transaction failure still wins
+  ---
+  duration_ms: 0.308863
+  type: 'test'
+  ...
+# Subtest: v1.24.9 generic image is not sufficient to force contextual deposit
+ok 160 - v1.24.9 generic image is not sufficient to force contextual deposit
+  ---
+  duration_ms: 2.22684
+  type: 'test'
+  ...
+# Subtest: gangguan dibedakan dari lupa password
+ok 161 - gangguan dibedakan dari lupa password
+  ---
+  duration_ms: 4.092805
+  type: 'test'
+  ...
+# Subtest: gangguan masuk Human Bridge ISSUE
+ok 162 - gangguan masuk Human Bridge ISSUE
+  ---
+  duration_ms: 0.227868
+  type: 'test'
+  ...
+# Subtest: polling near realtime dan UI cepat tanpa full rerender tiap tick
+ok 163 - polling near realtime dan UI cepat tanpa full rerender tiap tick
+  ---
+  duration_ms: 1.257667
+  type: 'test'
+  ...
+# Subtest: telegram ticket awal sederhana dan routing tetap internal
+ok 164 - telegram ticket awal sederhana dan routing tetap internal
+  ---
+  duration_ms: 1.360314
+  type: 'test'
+  ...
+# Subtest: belajar CS aktif langsung untuk style dan auto approve pola aman berulang
+ok 165 - belajar CS aktif langsung untuk style dan auto approve pola aman berulang
+  ---
+  duration_ms: 3.820914
+  type: 'test'
+  ...
+# Subtest: reset/operational checking uses requested wait message
+ok 166 - reset/operational checking uses requested wait message
+  ---
+  duration_ms: 0.844797
+  type: 'test'
+  ...
+# Subtest: WD asks ID when missing and sends processing message
+ok 167 - WD asks ID when missing and sends processing message
+  ---
+  duration_ms: 0.175919
+  type: 'test'
+  ...
+# Subtest: WD pending reply stays silent until member talks again
+ok 168 - WD pending reply stays silent until member talks again
+  ---
+  duration_ms: 0.318934
+  type: 'test'
+  ...
+# Subtest: DANA limit collects replacement account and sends it back to WD group
+ok 169 - DANA limit collects replacement account and sends it back to WD group
+  ---
+  duration_ms: 0.339226
+  type: 'test'
+  ...
+# Subtest: LiveChat-like dashboard preserves line breaks and has bottom multiline composer
+ok 170 - LiveChat-like dashboard preserves line breaks and has bottom multiline composer
+  ---
+  duration_ms: 0.39502
+  type: 'test'
+  ...
+# Subtest: manual dashboard CS replies are captured for learning
+ok 171 - manual dashboard CS replies are captured for learning
+  ---
+  duration_ms: 0.164132
+  type: 'test'
+  ...
+# Subtest: reset password merges split member account data across turns
+ok 172 - reset password merges split member account data across turns
+  ---
+  duration_ms: 4.794454
+  type: 'test'
+  ...
+# Subtest: reset password accepts all account fields in one member message
+ok 173 - reset password accepts all account fields in one member message
+  ---
+  duration_ms: 0.468537
+  type: 'test'
+  ...
+# Subtest: reset asks one missing field at a time
+ok 174 - reset asks one missing field at a time
+  ---
+  duration_ms: 0.332181
+  type: 'test'
+  ...
+# Subtest: deposit confirmation phrase detection
+ok 175 - deposit confirmation phrase detection
+  ---
+  duration_ms: 1.657915
+  type: 'test'
+  ...
+# Subtest: reset human bridge has all required actions
+ok 176 - reset human bridge has all required actions
+  ---
+  duration_ms: 4.099482
+  type: 'test'
+  ...
+# Subtest: v1.10.4 deposit problems route to Telegram bridge
+ok 177 - v1.10.4 deposit problems route to Telegram bridge
+  ---
+  duration_ms: 0.770827
+  type: 'test'
+  ...
+# Subtest: v1.10.4 source includes stateful ID + proof DP flow and exact success wording
+ok 178 - v1.10.4 source includes stateful ID + proof DP flow and exact success wording
+  ---
+  duration_ms: 8.809603
+  type: 'test'
+  ...
+# Subtest: reset recognizes hyphenated account/phone number
+ok 179 - reset recognizes hyphenated account/phone number
+  ---
+  duration_ms: 9.938979
+  type: 'test'
+  ...
+# Subtest: reset recognizes spaced and dotted account number
+ok 180 - reset recognizes spaced and dotted account number
+  ---
+  duration_ms: 0.515026
+  type: 'test'
+  ...
+# Subtest: brain normalizes case state
+ok 181 - brain normalizes case state
+  ---
+  duration_ms: 3.278348
+  type: 'test'
+  ...
+# Subtest: contradiction gate forces ask human
+ok 182 - contradiction gate forces ask human
+  ---
+  duration_ms: 0.342252
+  type: 'test'
+  ...
+# Subtest: high risk without verified source cannot auto reply
+ok 183 - high risk without verified source cannot auto reply
+  ---
+  duration_ms: 0.199927
+  type: 'test'
+  ...
+# Subtest: engine digests old history from oldest forward and persists brain
+ok 184 - engine digests old history from oldest forward and persists brain
+  ---
+  duration_ms: 1.345189
+  type: 'test'
+  ...
+# Subtest: learning backfill scans stored CS history in batches
+ok 185 - learning backfill scans stored CS history in batches
+  ---
+  duration_ms: 1.526739
+  type: 'test'
+  ...
+# Subtest: bonus typo is normalized and routed as bonus
+ok 186 - bonus typo is normalized and routed as bonus
+  ---
+  duration_ms: 3.981757
+  type: 'test'
+  ...
+# Subtest: forgot password wins over generic login problem
+ok 187 - forgot password wins over generic login problem
+  ---
+  duration_ms: 0.25719
+  type: 'test'
+  ...
+# Subtest: operational issue aliases route to issue group
+ok 188 - operational issue aliases route to issue group
+  ---
+  duration_ms: 0.272329
+  type: 'test'
+  ...
+# Subtest: WD/account redirect are separated correctly
+ok 189 - WD/account redirect are separated correctly
+  ---
+  duration_ms: 0.174933
+  type: 'test'
+  ...
+# Subtest: deposit/WD terse messages are treated as high-risk staff categories
+ok 190 - deposit/WD terse messages are treated as high-risk staff categories
+  ---
+  duration_ms: 0.270606
+  type: 'test'
+  ...
+# Subtest: v1.12.0 LiveChat end chat uses deactivate_chat
+ok 191 - v1.12.0 LiveChat end chat uses deactivate_chat
+  ---
+  duration_ms: 48.136076
+  type: 'test'
+  ...
+# Subtest: v1.12.0 DP flow merges proof + later user ID and sends wait reply
+ok 192 - v1.12.0 DP flow merges proof + later user ID and sends wait reply
+  ---
+  duration_ms: 5.741473
+  type: 'test'
+  ...
+# Subtest: v1.12.0 has structured Bot Provision promo rules and promo knowledge injection
+ok 193 - v1.12.0 has structured Bot Provision promo rules and promo knowledge injection
+  ---
+  duration_ms: 3.353849
+  type: 'test'
+  ...
+# Subtest: deposit flow waits for ID+proof, sends holding, then bridges
+ok 194 - deposit flow waits for ID+proof, sends holding, then bridges
+  ---
+  duration_ms: 0.8352
+  type: 'test'
+  ...
+# Subtest: telegram deposit ticket has final and proof-review actions
+ok 195 - telegram deposit ticket has final and proof-review actions
+  ---
+  duration_ms: 0.200917
+  type: 'test'
+  ...
+# Subtest: end chat closes LiveChat and local inbox
+ok 196 - end chat closes LiveChat and local inbox
+  ---
+  duration_ms: 0.330068
+  type: 'test'
+  ...
+# Subtest: inbox exposes LiveChat-like preview, time, needs-reply indicator
+ok 197 - inbox exposes LiveChat-like preview, time, needs-reply indicator
+  ---
+  duration_ms: 0.197687
+  type: 'test'
+  ...
+# Subtest: history learning signature clusters conversational variants
+ok 198 - history learning signature clusters conversational variants
+  ---
+  duration_ms: 1.310831
+  type: 'test'
+  ...
+# Subtest: history auto-learning rejects sensitive facts as reusable replies
+ok 199 - history auto-learning rejects sensitive facts as reusable replies
+  ---
+  duration_ms: 0.88674
+  type: 'test'
+  ...
+# Subtest: inbox rank follows LiveChat list order
+ok 200 - inbox rank follows LiveChat list order
+  ---
+  duration_ms: 1.870797
+  type: 'test'
+  ...
+# Subtest: AI prompt includes full history patterns and structured case memory
+ok 201 - AI prompt includes full history patterns and structured case memory
+  ---
+  duration_ms: 0.2388
+  type: 'test'
+  ...
+# Subtest: end chat understands already inactive detail
+ok 202 - end chat understands already inactive detail
+  ---
+  duration_ms: 0.390362
+  type: 'test'
+  ...
+# Subtest: deposit workflow accepts standalone user id after bot requested it
+ok 203 - deposit workflow accepts standalone user id after bot requested it
+  ---
+  duration_ms: 4.528568
+  type: 'test'
+  ...
+# Subtest: standalone id fallback is guarded against obvious account numbers and common replies
+ok 204 - standalone id fallback is guarded against obvious account numbers and common replies
+  ---
+  duration_ms: 0.192221
+  type: 'test'
+  ...
+# Subtest: v1.13.2 retries open Telegram bridge requests and supports DP route aliases
+ok 205 - v1.13.2 retries open Telegram bridge requests and supports DP route aliases
+  ---
+  duration_ms: 2.915557
+  type: 'test'
+  ...
+# Subtest: v1.13.2 permits safe unquoted Telegram result only for a unique open category ticket
+ok 206 - v1.13.2 permits safe unquoted Telegram result only for a unique open category ticket
+  ---
+  duration_ms: 0.550037
+  type: 'test'
+  ...
+# Subtest: getChat uses documented latest-thread request first and only falls back when it is empty
+ok 207 - getChat uses documented latest-thread request first and only falls back when it is empty
+  ---
+  duration_ms: 2.081614
+  type: 'test'
+  ...
+# Subtest: operational workflows can scan full stored conversation history
+ok 208 - operational workflows can scan full stored conversation history
+  ---
+  duration_ms: 2.72195
+  type: 'test'
+  ...
+# Subtest: AI prompt explicitly treats digest and recent context as one whole conversation
+ok 209 - AI prompt explicitly treats digest and recent context as one whole conversation
+  ---
+  duration_ms: 2.304902
+  type: 'test'
+  ...
+# Subtest: v1.14 style examples are approved-only
+ok 210 - v1.14 style examples are approved-only
+  ---
+  duration_ms: 1.200505
+  type: 'test'
+  ...
+# Subtest: v1.14 auto history needs three safe repeats
+ok 211 - v1.14 auto history needs three safe repeats
+  ---
+  duration_ms: 0.448003
+  type: 'test'
+  ...
+# Subtest: v1.14 human request has database race guard
+ok 212 - v1.14 human request has database race guard
+  ---
+  duration_ms: 0.567772
+  type: 'test'
+  ...
+# Subtest: v1.14 OpenAI retries transient failures but not auth
+ok 213 - v1.14 OpenAI retries transient failures but not auth
+  ---
+  duration_ms: 0.209389
+  type: 'test'
+  ...
+# Subtest: v1.14 member burst debounce is enabled
+ok 214 - v1.14 member burst debounce is enabled
+  ---
+  duration_ms: 0.346765
+  type: 'test'
+  ...
+# Subtest: v1.15 deposit CS buttons match final workflow
+ok 215 - v1.15 deposit CS buttons match final workflow
+  ---
+  duration_ms: 1.577124
+  type: 'test'
+  ...
+# Subtest: v1.15 deposit follow-up requires a new proof after staff rejection
+ok 216 - v1.15 deposit follow-up requires a new proof after staff rejection
+  ---
+  duration_ms: 0.372328
+  type: 'test'
+  ...
+# Subtest: v1.15 reset password uses bank data, verification deposit proof, and exact credential reply
+ok 217 - v1.15 reset password uses bank data, verification deposit proof, and exact credential reply
+  ---
+  duration_ms: 0.629795
+  type: 'test'
+  ...
+# Subtest: v1.15 sensitive reset credentials require Telegram reply-to-ticket
+ok 218 - v1.15 sensitive reset credentials require Telegram reply-to-ticket
+  ---
+  duration_ms: 0.250176
+  type: 'test'
+  ...
+# Subtest: v1.15 conversation brain and image understanding remain active
+ok 219 - v1.15 conversation brain and image understanding remain active
+  ---
+  duration_ms: 0.253305
+  type: 'test'
+  ...
+# Subtest: v1.16 bonus info is not treated as a claim
+ok 220 - v1.16 bonus info is not treated as a claim
+  ---
+  duration_ms: 5.67734
+  type: 'test'
+  ...
+# Subtest: v1.16 actual bonus claims route as claim intents
+ok 221 - v1.16 actual bonus claims route as claim intents
+  ---
+  duration_ms: 0.427888
+  type: 'test'
+  ...
+# Subtest: v1.16 official weekly promo knowledge is seeded
+ok 222 - v1.16 official weekly promo knowledge is seeded
+  ---
+  duration_ms: 3.562562
+  type: 'test'
+  ...
+# Subtest: v1.16 engine has deterministic info path and Telegram claim flow remains
+ok 223 - v1.16 engine has deterministic info path and Telegram claim flow remains
+  ---
+  duration_ms: 1.307888
+  type: 'test'
+  ...
+# Subtest: v1.17 classifies dynamic important-info questions
+ok 224 - v1.17 classifies dynamic important-info questions
+  ---
+  duration_ms: 2.704914
+  type: 'test'
+  ...
+# Subtest: v1.17 important info helper scores aliases and formats source
+ok 225 - v1.17 important info helper scores aliases and formats source
+  ---
+  duration_ms: 0.827036
+  type: 'test'
+  ...
+# Subtest: v1.17 source contains important menu CRUD and seeded promo catalog
+ok 226 - v1.17 source contains important menu CRUD and seeded promo catalog
+  ---
+  duration_ms: 1.674765
+  type: 'test'
+  ...
+# Subtest: v1.17 builds search query before reading important data
+ok 227 - v1.17 builds search query before reading important data
+  ---
+  duration_ms: 1.007108
+  type: 'test'
+  ...
+# Subtest: v1.17 promo/event claim works without literal bonus word
+ok 228 - v1.17 promo/event claim works without literal bonus word
+  ---
+  duration_ms: 0.283848
+  type: 'test'
+  ...
+# Subtest: v1.17 engine answers current link RTP prediction from Menu Penting and generic promo lists active catalog
+ok 229 - v1.17 engine answers current link RTP prediction from Menu Penting and generic promo lists active catalog
+  ---
+  duration_ms: 1.105929
+  type: 'test'
+  ...
+# Subtest: v1.17.1 reset deposit continuation can resolve exact prior Telegram ticket
+ok 230 - v1.17.1 reset deposit continuation can resolve exact prior Telegram ticket
+  ---
+  duration_ms: 2.855549
+  type: 'test'
+  ...
+# Subtest: v1.17.1 continuation prefers OPEN reset request from the same LiveChat chat
+ok 231 - v1.17.1 continuation prefers OPEN reset request from the same LiveChat chat
+  ---
+  duration_ms: 0.321281
+  type: 'test'
+  ...
+# Subtest: v1.17.1 reset credentials remain reply-to-ticket only
+ok 232 - v1.17.1 reset credentials remain reply-to-ticket only
+  ---
+  duration_ms: 0.336069
+  type: 'test'
+  ...
+# Subtest: v1.17.2 callback resolves ticket by id without 500-ticket scan limit
+ok 233 - v1.17.2 callback resolves ticket by id without 500-ticket scan limit
+  ---
+  duration_ms: 4.712026
+  type: 'test'
+  ...
+# Subtest: v1.17.2 reset continuation supports deposit-first and deposit-not-in tickets
+ok 234 - v1.17.2 reset continuation supports deposit-first and deposit-not-in tickets
+  ---
+  duration_ms: 0.321857
+  type: 'test'
+  ...
+# Subtest: v1.17.2 reset credentials require full user password and login link triplet
+ok 235 - v1.17.2 reset credentials require full user password and login link triplet
+  ---
+  duration_ms: 1.500726
+  type: 'test'
+  ...
+# Subtest: v1.18 inbox is reconciled after sync instead of cleared before sync
+ok 236 - v1.18 inbox is reconciled after sync instead of cleared before sync
+  ---
+  duration_ms: 0.911792
+  type: 'test'
+  ...
+# Subtest: v1.18 DB keeps last-seen grace so one incomplete provider list cannot erase inbox
+ok 237 - v1.18 DB keeps last-seen grace so one incomplete provider list cannot erase inbox
+  ---
+  duration_ms: 0.282507
+  type: 'test'
+  ...
+# Subtest: v1.18 dashboard only rerenders chat list when actual data changes
+ok 238 - v1.18 dashboard only rerenders chat list when actual data changes
+  ---
+  duration_ms: 0.151249
+  type: 'test'
+  ...
+# Subtest: v1.18 end chat closes LiveChat and local conversation state
+ok 239 - v1.18 end chat closes LiveChat and local conversation state
+  ---
+  duration_ms: 0.332973
+  type: 'test'
+  ...
+# Subtest: v1.32 incomplete first page cannot close chats; complete deep inventory is authoritative
+ok 240 - v1.32 incomplete first page cannot close chats; complete deep inventory is authoritative
+  ---
+  duration_ms: 0.175214
+  type: 'test'
+  ...
+# Subtest: telegram callback is acknowledged before slow action handler
+ok 241 - telegram callback is acknowledged before slow action handler
+  ---
+  duration_ms: 2.955764
+  type: 'test'
+  ...
+# Subtest: bridge callback ticket is atomically claimed
+ok 242 - bridge callback ticket is atomically claimed
+  ---
+  duration_ms: 0.537397
+  type: 'test'
+  ...
+# Subtest: failed callback reopens ticket
+ok 243 - failed callback reopens ticket
+  ---
+  duration_ms: 0.22713
+  type: 'test'
+  ...
+# Subtest: telegram updates are handled concurrently with bounded workers
+ok 244 - telegram updates are handled concurrently with bounded workers
+  ---
+  duration_ms: 0.202655
+  type: 'test'
+  ...
+# Subtest: stale processing ticket recovery is present
+ok 245 - stale processing ticket recovery is present
+  ---
+  duration_ms: 0.257614
+  type: 'test'
+  ...
+# Subtest: v1.18.2 bonus claim with inline ID is understood immediately
+ok 246 - v1.18.2 bonus claim with inline ID is understood immediately
+  ---
+  duration_ms: 3.686538
+  type: 'test'
+  ...
+# Subtest: v1.18.2 bonus flow prioritizes current-message ID and accepts standalone requested ID
+ok 247 - v1.18.2 bonus flow prioritizes current-message ID and accepts standalone requested ID
+  ---
+  duration_ms: 1.548275
+  type: 'test'
+  ...
+# Subtest: v1.18.2 account ID parser does not treat generic bonus words as an ID
+ok 248 - v1.18.2 account ID parser does not treat generic bonus words as an ID
+  ---
+  duration_ms: 2.294338
+  type: 'test'
+  ...
+# Subtest: semantic normalize memahami singkatan operasional CS Indonesia
+ok 249 - semantic normalize memahami singkatan operasional CS Indonesia
+  ---
+  duration_ms: 1.063465
+  type: 'test'
+  ...
+# Subtest: semantic similarity menghubungkan variasi kalimat dengan maksud sama
+ok 250 - semantic similarity menghubungkan variasi kalimat dengan maksud sama
+  ---
+  duration_ms: 1.692453
+  type: 'test'
+  ...
+# Subtest: dashboard v1.20 menampilkan case intelligence dan feedback dua arah
+ok 251 - dashboard v1.20 menampilkan case intelligence dan feedback dua arah
+  ---
+  duration_ms: 1.838211
+  type: 'test'
+  ...
+# Subtest: bonus completion claim from AI is blocked before staff confirmation
+ok 252 - bonus completion claim from AI is blocked before staff confirmation
+  ---
+  duration_ms: 1.824744
+  type: 'test'
+  ...
+# Subtest: bonus request is high risk even when routed with explicit bonus claim intent
+ok 253 - bonus request is high risk even when routed with explicit bonus claim intent
+  ---
+  duration_ms: 0.905462
+  type: 'test'
+  ...
+# Subtest: bonus claim workflow requires successful Telegram dispatch before holding reply
+ok 254 - bonus claim workflow requires successful Telegram dispatch before holding reply
+  ---
+  duration_ms: 1.488157
+  type: 'test'
+  ...
+# Subtest: new LiveChat thread uses per-thread greeting claim
+ok 255 - new LiveChat thread uses per-thread greeting claim
+  ---
+  duration_ms: 1.959419
+  type: 'test'
+  ...
+# Subtest: v1.20.2 parses user id with dot punctuation
+ok 256 - v1.20.2 parses user id with dot punctuation
+  ---
+  duration_ms: 2.25085
+  type: 'test'
+  ...
+# Subtest: v1.20.2 WD waiting-id continuation accepts standalone requested ID
+ok 257 - v1.20.2 WD waiting-id continuation accepts standalone requested ID
+  ---
+  duration_ms: 5.590076
+  type: 'test'
+  ...
+# Subtest: v1.20.2 WD requires telegram before member acknowledgement
+ok 258 - v1.20.2 WD requires telegram before member acknowledgement
+  ---
+  duration_ms: 3.635765
+  type: 'test'
+  ...
+# Subtest: v1.20.3 Tanya Staff can open full conversation history
+ok 259 - v1.20.3 Tanya Staff can open full conversation history
+  ---
+  duration_ms: 1.283319
+  type: 'test'
+  ...
+# Subtest: v1.20.3 Tanya Staff direct reply uses same LiveChat conversation send endpoint
+ok 260 - v1.20.3 Tanya Staff direct reply uses same LiveChat conversation send endpoint
+  ---
+  duration_ms: 0.196211
+  type: 'test'
+  ...
+# Subtest: v1.20.3 human takeover controls are available inside Tanya Staff
+ok 261 - v1.20.3 human takeover controls are available inside Tanya Staff
+  ---
+  duration_ms: 0.193821
+  type: 'test'
+  ...
+# Subtest: v1.20.3 direct reply remains available while request stays OPEN
+ok 262 - v1.20.3 direct reply remains available while request stays OPEN
+  ---
+  duration_ms: 0.243731
+  type: 'test'
+  ...
+# Subtest: bonus/member ID parser accepts comma-separated forms
+ok 263 - bonus/member ID parser accepts comma-separated forms
+  ---
+  duration_ms: 2.634908
+  type: 'test'
+  ...
+# Subtest: bonus/member ID parser accepts compact ID prefix
+ok 264 - bonus/member ID parser accepts compact ID prefix
+  ---
+  duration_ms: 0.262291
+  type: 'test'
+  ...
+# Subtest: v1.20.5 reset only requires account/wallet number plus holder name
+ok 265 - v1.20.5 reset only requires account/wallet number plus holder name
+  ---
+  duration_ms: 2.114105
+  type: 'test'
+  ...
+# Subtest: v1.20.5 reset merges gopay + phone number across customer turns
+ok 266 - v1.20.5 reset merges gopay + phone number across customer turns
+  ---
+  duration_ms: 2.137172
+  type: 'test'
+  ...
+# Subtest: v1.20.5 reset, deposit and WD all require Telegram delivery before acknowledgement
+ok 267 - v1.20.5 reset, deposit and WD all require Telegram delivery before acknowledgement
+  ---
+  duration_ms: 1.766324
+  type: 'test'
+  ...
+# Subtest: v1.20.5 operational flows persist WAITING_HUMAN state with collected data
+ok 268 - v1.20.5 operational flows persist WAITING_HUMAN state with collected data
+  ---
+  duration_ms: 1.545664
+  type: 'test'
+  ...
+# Subtest: v1.20.5 waiting-human followups cannot restart ID collection
+ok 269 - v1.20.5 waiting-human followups cannot restart ID collection
+  ---
+  duration_ms: 1.355479
+  type: 'test'
+  ...
+# Subtest: v1.20.5 stale open human request is cancelled when operational intent changes
+ok 270 - v1.20.5 stale open human request is cancelled when operational intent changes
+  ---
+  duration_ms: 2.229825
+  type: 'test'
+  ...
+# Subtest: v1.20.7 normalizes noisy DP shorthand with numeric suffixes
+ok 271 - v1.20.7 normalizes noisy DP shorthand with numeric suffixes
+  ---
+  duration_ms: 6.68626
+  type: 'test'
+  ...
+# Subtest: v1.20.7 context resolver keeps receipt image inside deposit case
+ok 272 - v1.20.7 context resolver keeps receipt image inside deposit case
+  ---
+  duration_ms: 0.83193
+  type: 'test'
+  ...
+# Subtest: v1.20.7 operational routing runs before stale open human request
+ok 273 - v1.20.7 operational routing runs before stale open human request
+  ---
+  duration_ms: 0.710295
+  type: 'test'
+  ...
+# Subtest: v1.21.0 Telegram bridge supports Railway ENV bootstrap per category
+ok 274 - v1.21.0 Telegram bridge supports Railway ENV bootstrap per category
+  ---
+  duration_ms: 1.105853
+  type: 'test'
+  ...
+# Subtest: v1.21.0 Telegram updates have persistent cross-process deduplication
+ok 275 - v1.21.0 Telegram updates have persistent cross-process deduplication
+  ---
+  duration_ms: 0.489933
+  type: 'test'
+  ...
+# Subtest: v1.21.0 critical chat safety layers remain enabled
+ok 276 - v1.21.0 critical chat safety layers remain enabled
+  ---
+  duration_ms: 1.396303
+  type: 'test'
+  ...
+# Subtest: detects multiple operational intents
+ok 277 - detects multiple operational intents
+  ---
+  duration_ms: 2.660696
+  type: 'test'
+  ...
+# Subtest: detects prompt injection as untrusted member text
+ok 278 - detects prompt injection as untrusted member text
+  ---
+  duration_ms: 1.709977
+  type: 'test'
+  ...
+# Subtest: extracts member facts
+ok 279 - extracts member facts
+  ---
+  duration_ms: 1.824263
+  type: 'test'
+  ...
+# Subtest: detects correction
+ok 280 - detects correction
+  ---
+  duration_ms: 0.383135
+  type: 'test'
+  ...
+# Subtest: risk tiers
+ok 281 - risk tiers
+  ---
+  duration_ms: 0.426153
+  type: 'test'
+  ...
+# Subtest: v1.23 operational intent coverage
+ok 282 - v1.23 operational intent coverage
+  ---
+  duration_ms: 3.962887
+  type: 'test'
+  ...
+# Subtest: v1.23 new operational cases are Telegram bridge categories
+ok 283 - v1.23 new operational cases are Telegram bridge categories
+  ---
+  duration_ms: 0.413892
+  type: 'test'
+  ...
+# Subtest: v1.23 sensitive workflows require confirmed Telegram delivery; loss complaints notify without blocking
+ok 284 - v1.23 sensitive workflows require confirmed Telegram delivery; loss complaints notify without blocking
+  ---
+  duration_ms: 1.976414
+  type: 'test'
+  ...
+# Subtest: v1.23 link and registration workflows still bridge to Telegram
+ok 285 - v1.23 link and registration workflows still bridge to Telegram
+  ---
+  duration_ms: 1.372897
+  type: 'test'
+  ...
+# Subtest: v1.23 Telegram tickets show correlation code and category
+ok 286 - v1.23 Telegram tickets show correlation code and category
+  ---
+  duration_ms: 0.629926
+  type: 'test'
+  ...
+# Subtest: v1.23.1 callback always ACKs before slow ticket/LiveChat work
+ok 287 - v1.23.1 callback always ACKs before slow ticket/LiveChat work
+  ---
+  duration_ms: 1.589411
+  type: 'test'
+  ...
+# Subtest: v1.23.1 unauthorized Telegram operator also gets callback ACK
+ok 288 - v1.23.1 unauthorized Telegram operator also gets callback ACK
+  ---
+  duration_ms: 0.303846
+  type: 'test'
+  ...
+# Subtest: v1.23.2 exact WD complaint from screenshot is WITHDRAW, never deposit
+ok 289 - v1.23.2 exact WD complaint from screenshot is WITHDRAW, never deposit
+  ---
+  duration_ms: 5.655928
+  type: 'test'
+  ...
+# Subtest: v1.23.2 fresh operational topic overrides stale conversation workflow
+ok 290 - v1.23.2 fresh operational topic overrides stale conversation workflow
+  ---
+  duration_ms: 2.058113
+  type: 'test'
+  ...
+# Subtest: v1.24 operational phrases map to the correct deterministic intent
+ok 291 - v1.24 operational phrases map to the correct deterministic intent
+  ---
+  duration_ms: 6.941367
+  type: 'test'
+  ...
+# Subtest: v1.24 transaction anchors beat generic login/access words
+ok 292 - v1.24 transaction anchors beat generic login/access words
+  ---
+  duration_ms: 0.285971
+  type: 'test'
+  ...
+# Subtest: v1.24 operational escalations all have a Telegram bridge route
+ok 293 - v1.24 operational escalations all have a Telegram bridge route
+  ---
+  duration_ms: 0.348592
+  type: 'test'
+  ...
+# Subtest: v1.24 engine gates sensitive acknowledgement on confirmed Telegram delivery
+ok 294 - v1.24 engine gates sensitive acknowledgement on confirmed Telegram delivery
+  ---
+  duration_ms: 1.694379
+  type: 'test'
+  ...
+# Subtest: Telegram operator access defaults to all even when legacy whitelist exists
+ok 295 - Telegram operator access defaults to all even when legacy whitelist exists
+  ---
+  duration_ms: 2.679576
+  type: 'test'
+  ...
+# Subtest: explicit bonus harian is preserved exactly
+ok 296 - explicit bonus harian is preserved exactly
+  ---
+  duration_ms: 3.660936
+  type: 'test'
+  ...
+# Subtest: bonus bulanan and mingguan remain distinct from harian
+ok 297 - bonus bulanan and mingguan remain distinct from harian
+  ---
+  duration_ms: 0.996294
+  type: 'test'
+  ...
+# Subtest: telegram claim wording does not duplicate bonus word
+ok 298 - telegram claim wording does not duplicate bonus word
+  ---
+  duration_ms: 0.469485
+  type: 'test'
+  ...
+# Subtest: engine resolves explicit subtype before semantic promo retrieval
+ok 299 - engine resolves explicit subtype before semantic promo retrieval
+  ---
+  duration_ms: 2.213389
+  type: 'test'
+  ...
+# Subtest: waiting-id parser extracts member ID embedded in bonus sentence
+ok 300 - waiting-id parser extracts member ID embedded in bonus sentence
+  ---
+  duration_ms: 3.195935
+  type: 'test'
+  ...
+# Subtest: waiting-id parser does not mistake workflow words for ID
+ok 301 - waiting-id parser does not mistake workflow words for ID
+  ---
+  duration_ms: 0.345734
+  type: 'test'
+  ...
+# Subtest: waiting-id parser avoids ambiguous free-form sentences
+ok 302 - waiting-id parser avoids ambiguous free-form sentences
+  ---
+  duration_ms: 0.530011
+  type: 'test'
+  ...
+# Subtest: specific bonus first message extracts inline member ID
+ok 303 - specific bonus first message extracts inline member ID
+  ---
+  duration_ms: 2.045754
+  type: 'test'
+  ...
+# Subtest: specific bonus engine always uses inline requested-ID parser on first message
+ok 304 - specific bonus engine always uses inline requested-ID parser on first message
+  ---
+  duration_ms: 2.312703
+  type: 'test'
+  ...
+# Subtest: v1.24.5 pure OK is terminal and cannot re-trigger WD workflow
+ok 305 - v1.24.5 pure OK is terminal and cannot re-trigger WD workflow
+  ---
+  duration_ms: 1.139669
+  type: 'test'
+  ...
+# Subtest: v1.24.5 gratitude has requested fixed reply and is terminal before workflow
+ok 306 - v1.24.5 gratitude has requested fixed reply and is terminal before workflow
+  ---
+  duration_ms: 0.306811
+  type: 'test'
+  ...
+# Subtest: v1.24.5 gratitude matcher is strict and does not swallow operational follow-up
+ok 307 - v1.24.5 gratitude matcher is strict and does not swallow operational follow-up
+  ---
+  duration_ms: 0.113272
+  type: 'test'
+  ...
+# Subtest: v1.24.6 identifies FreeBet / bonus 50 percent without stealing RONDA
+ok 308 - v1.24.6 identifies FreeBet / bonus 50 percent without stealing RONDA
+  ---
+  duration_ms: 3.764589
+  type: 'test'
+  ...
+# Subtest: v1.24.6 FreeBet sends full terms before staff escalation
+ok 309 - v1.24.6 FreeBet sends full terms before staff escalation
+  ---
+  duration_ms: 0.459962
+  type: 'test'
+  ...
+# Subtest: v1.24.6 agreement accepts oke or setuju
+ok 310 - v1.24.6 agreement accepts oke or setuju
+  ---
+  duration_ms: 0.91946
+  type: 'test'
+  ...
+# Subtest: v1.24.6 exact FreeBet result replies are present
+ok 311 - v1.24.6 exact FreeBet result replies are present
+  ---
+  duration_ms: 0.200417
+  type: 'test'
+  ...
+# Subtest: v1.24.6 FreeBet agreement is processed before generic acknowledgement shortcut
+ok 312 - v1.24.6 FreeBet agreement is processed before generic acknowledgement shortcut
+  ---
+  duration_ms: 1.950611
+  type: 'test'
+  ...
+# Subtest: v1.24.6 Telegram FreeBet ticket has DONE and TIDAK BISA CLAIM only
+ok 313 - v1.24.6 Telegram FreeBet ticket has DONE and TIDAK BISA CLAIM only
+  ---
+  duration_ms: 0.481048
+  type: 'test'
+  ...
+# Subtest: v1.24.7 photo-first flow asks only for user ID then waits human
+ok 314 - v1.24.7 photo-first flow asks only for user ID then waits human
+  ---
+  duration_ms: 2.601576
+  type: 'test'
+  ...
+# Subtest: v1.24.7 Telegram sends proof as photo not raw link
+ok 315 - v1.24.7 Telegram sends proof as photo not raw link
+  ---
+  duration_ms: 0.261517
+  type: 'test'
+  ...
+# Subtest: v1.24.7 proof ticket has requested triage actions
+ok 316 - v1.24.7 proof ticket has requested triage actions
+  ---
+  duration_ms: 0.329334
+  type: 'test'
+  ...
+# Subtest: v1.24.7 operator actions use requested customer messages
+ok 317 - v1.24.7 operator actions use requested customer messages
+  ---
+  duration_ms: 0.428652
+  type: 'test'
+  ...
+# Subtest: v1.24.8 Telegram tickets show LiveChat customer name prominently
+ok 318 - v1.24.8 Telegram tickets show LiveChat customer name prominently
+  ---
+  duration_ms: 2.468452
+  type: 'test'
+  ...
+# Subtest: v1.24.8 Telegram informational events also include LiveChat name
+ok 319 - v1.24.8 Telegram informational events also include LiveChat name
+  ---
+  duration_ms: 0.225728
+  type: 'test'
+  ...
+# Subtest: v1.25.0 WD problem must request current-case ID before Telegram
+ok 320 - v1.25.0 WD problem must request current-case ID before Telegram
+  ---
+  duration_ms: 1.569164
+  type: 'test'
+  ...
+# Subtest: v1.25.0 WD holding reply is sent only after Telegram delivery path
+ok 321 - v1.25.0 WD holding reply is sent only after Telegram delivery path
+  ---
+  duration_ms: 0.261027
+  type: 'test'
+  ...
+# Subtest: v1.25.0 pure iya while WD waits human gets thank-you waiting reply
+ok 322 - v1.25.0 pure iya while WD waits human gets thank-you waiting reply
+  ---
+  duration_ms: 0.501115
+  type: 'test'
+  ...
+# Subtest: WD holding after Telegram uses requested processing template
+ok 323 - WD holding after Telegram uses requested processing template
+  ---
+  duration_ms: 1.152295
+  type: 'test'
+  ...
+# Subtest: WD waiting acknowledgement recognizes natural wait phrases without repeating WD template
+ok 324 - WD waiting acknowledgement recognizes natural wait phrases without repeating WD template
+  ---
+  duration_ms: 0.841839
+  type: 'test'
+  ...
+# Subtest: waiting acknowledgement guard does not swallow fresh unresolved problems
+ok 325 - waiting acknowledgement guard does not swallow fresh unresolved problems
+  ---
+  duration_ms: 0.184828
+  type: 'test'
+  ...
+# Subtest: reset parser stops one-line fields at next label
+ok 326 - reset parser stops one-line fields at next label
+  ---
+  duration_ms: 2.352656
+  type: 'test'
+  ...
+# Subtest: exact Telegram reset reply can recover ticket/request state drift safely
+ok 327 - exact Telegram reset reply can recover ticket/request state drift safely
+  ---
+  duration_ms: 0.185893
+  type: 'test'
+  ...
+# Subtest: typed reset ticket code family is recognized while credential replies still require exact reply
+ok 328 - typed reset ticket code family is recognized while credential replies still require exact reply
+  ---
+  duration_ms: 0.419175
+  type: 'test'
+  ...
+# Subtest: loss complaint remains loss even when deposit is only context
+ok 329 - loss complaint remains loss even when deposit is only context
+  ---
+  duration_ms: 4.786088
+  type: 'test'
+  ...
+# Subtest: waiting proof review cannot swallow explicit new loss topic
+ok 330 - waiting proof review cannot swallow explicit new loss topic
+  ---
+  duration_ms: 1.69972
+  type: 'test'
+  ...
+# Subtest: deposit history plus kapan WD is withdraw eligibility, not deposit problem
+ok 331 - deposit history plus kapan WD is withdraw eligibility, not deposit problem
+  ---
+  duration_ms: 5.745347
+  type: 'test'
+  ...
+# Subtest: real deposit failure still stays deposit problem
+ok 332 - real deposit failure still stays deposit problem
+  ---
+  duration_ms: 0.359023
+  type: 'test'
+  ...
+# Subtest: engine has dedicated WD eligibility path and does not ask deposit proof
+ok 333 - engine has dedicated WD eligibility path and does not ask deposit proof
+  ---
+  duration_ms: 1.636147
+  type: 'test'
+  ...
+# Subtest: LiveChat thread id is primary hard session boundary with authoritative welcome fallback
+ok 334 - LiveChat thread id is primary hard session boundary with authoritative welcome fallback
+  ---
+  duration_ms: 2.570666
+  type: 'test'
+  ...
+# Subtest: old workflow cannot contaminate current-session operational history
+ok 335 - old workflow cannot contaminate current-session operational history
+  ---
+  duration_ms: 1.879491
+  type: 'test'
+  ...
+# Subtest: greeting text remains daypart aware and first-response friendly
+ok 336 - greeting text remains daypart aware and first-response friendly
+  ---
+  duration_ms: 0.316726
+  type: 'test'
+  ...
+# Subtest: generic bonus deposit means daily Rp5.000 bonus
+ok 337 - generic bonus deposit means daily Rp5.000 bonus
+  ---
+  duration_ms: 5.695077
+  type: 'test'
+  ...
+# Subtest: explicit named campaigns override generic deposit wording
+ok 338 - explicit named campaigns override generic deposit wording
+  ---
+  duration_ms: 0.604284
+  type: 'test'
+  ...
+# Subtest: loss complaints remain LOSS_COMPLAINT even with deposit context or profanity
+ok 339 - loss complaints remain LOSS_COMPLAINT even with deposit context or profanity
+  ---
+  duration_ms: 6.579098
+  type: 'test'
+  ...
+# Subtest: loss branch responds directly, offers RTP as reference, and does not open forced human wait
+ok 340 - loss branch responds directly, offers RTP as reference, and does not open forced human wait
+  ---
+  duration_ms: 1.588063
+  type: 'test'
+  ...
+# Subtest: RTP still comes from Menu Penting and no guaranteed win wording is introduced
+ok 341 - RTP still comes from Menu Penting and no guaranteed win wording is introduced
+  ---
+  duration_ms: 1.178315
+  type: 'test'
+  ...
+# Subtest: saldo belum masuk without transaction type is ambiguous
+ok 342 - saldo belum masuk without transaction type is ambiguous
+  ---
+  duration_ms: 4.21119
+  type: 'test'
+  ...
+# Subtest: explicit WD and DP still route deterministically
+ok 343 - explicit WD and DP still route deterministically
+  ---
+  duration_ms: 0.526367
+  type: 'test'
+  ...
+# Subtest: engine asks DP or WD instead of guessing deposit
+ok 344 - engine asks DP or WD instead of guessing deposit
+  ---
+  duration_ms: 1.320118
+  type: 'test'
+  ...
+# Subtest: lpa id lpa sandi is understood as account recovery/reset password
+ok 345 - lpa id lpa sandi is understood as account recovery/reset password
+  ---
+  duration_ms: 4.773025
+  type: 'test'
+  ...
+# Subtest: reset parser understands DANA number and compact atasnama
+ok 346 - reset parser understands DANA number and compact atasnama
+  ---
+  duration_ms: 3.468465
+  type: 'test'
+  ...
+# Subtest: engine tells staff when member forgot both ID and password
+ok 347 - engine tells staff when member forgot both ID and password
+  ---
+  duration_ms: 3.254749
+  type: 'test'
+  ...
+# Subtest: rollingan typos normalize to rollingan bonus
+ok 348 - rollingan typos normalize to rollingan bonus
+  ---
+  duration_ms: 3.048994
+  type: 'test'
+  ...
+# Subtest: rollingan info stays bonus info
+ok 349 - rollingan info stays bonus info
+  ---
+  duration_ms: 0.843316
+  type: 'test'
+  ...
+# Subtest: missing rollingan routes to bonus request
+ok 350 - missing rollingan routes to bonus request
+  ---
+  duration_ms: 0.578889
+  type: 'test'
+  ...
+# Subtest: short Indonesian greetings are normalized and classified deterministically
+ok 351 - short Indonesian greetings are normalized and classified deterministically
+  ---
+  duration_ms: 8.232972
+  type: 'test'
+  ...
+# Subtest: engine handles explicit greetings before AI and blocks shortcut leakage
+ok 352 - engine handles explicit greetings before AI and blocks shortcut leakage
+  ---
+  duration_ms: 1.540002
+  type: 'test'
+  ...
+# Subtest: shortcut leak has a human-safe fallback instead of sending the token
+ok 353 - shortcut leak has a human-safe fallback instead of sending the token
+  ---
+  duration_ms: 1.293173
+  type: 'test'
+  ...
+# Subtest: cancel/reject deposit is a dedicated intent
+ok 354 - cancel/reject deposit is a dedicated intent
+  ---
+  duration_ms: 5.726766
+  type: 'test'
+  ...
+# Subtest: new member and ronda are distinct bonus campaigns
+ok 355 - new member and ronda are distinct bonus campaigns
+  ---
+  duration_ms: 1.202382
+  type: 'test'
+  ...
+# Subtest: new member/ronda info and claims route as bonus
+ok 356 - new member/ronda info and claims route as bonus
+  ---
+  duration_ms: 0.64655
+  type: 'test'
+  ...
+# Subtest: Telegram keyboards expose the requested actions
+ok 357 - Telegram keyboards expose the requested actions
+  ---
+  duration_ms: 0.839494
+  type: 'test'
+  ...
+# Subtest: engine sends rules before special bonus claim and supports all staff outcomes
+ok 358 - engine sends rules before special bonus claim and supports all staff outcomes
+  ---
+  duration_ms: 1.524365
+  type: 'test'
+  ...
+# Subtest: lupa paspor in LC account context is treated as lupa password
+ok 359 - lupa paspor in LC account context is treated as lupa password
+  ---
+  duration_ms: 2.986916
+  type: 'test'
+  ...
+# Subtest: standalone paspor is not globally rewritten
+ok 360 - standalone paspor is not globally rewritten
+  ---
+  duration_ms: 0.92961
+  type: 'test'
+  ...
+# Subtest: common login/access complaints are operational intents
+ok 361 - common login/access complaints are operational intents
+  ---
+  duration_ms: 4.333188
+  type: 'test'
+  ...
+# Subtest: access/login flow asks screenshot first and sends evidence to staff
+ok 362 - access/login flow asks screenshot first and sends evidence to staff
+  ---
+  duration_ms: 1.400954
+  type: 'test'
+  ...
+# Subtest: Telegram bridge sends latest attachment as photo when present
+ok 363 - Telegram bridge sends latest attachment as photo when present
+  ---
+  duration_ms: 0.571655
+  type: 'test'
+  ...
+# Subtest: mau daftar routes to REGISTER_REQUEST
+ok 364 - mau daftar routes to REGISTER_REQUEST
+  ---
+  duration_ms: 2.451251
+  type: 'test'
+  ...
+# Subtest: registration parser accepts email and phone as optional
+ok 365 - registration parser accepts email and phone as optional
+  ---
+  duration_ms: 1.841126
+  type: 'test'
+  ...
+# Subtest: registration form contains all requested fields
+ok 366 - registration form contains all requested fields
+  ---
+  duration_ms: 0.330314
+  type: 'test'
+  ...
+# Subtest: registration ticket asks CS to register and reply with credentials
+ok 367 - registration ticket asks CS to register and reply with credentials
+  ---
+  duration_ms: 0.178528
+  type: 'test'
+  ...
+# Subtest: engine auto-forwards registration credentials like reset password
+ok 368 - engine auto-forwards registration credentials like reset password
+  ---
+  duration_ms: 1.341498
+  type: 'test'
+  ...
+# Subtest: stale Telegram tickets are blocked after a new LiveChat session starts
+ok 369 - stale Telegram tickets are blocked after a new LiveChat session starts
+  ---
+  duration_ms: 3.113253
+  type: 'test'
+  ...
+# Subtest: generic ambiguous one-liners are clarified, not guessed
+ok 370 - generic ambiguous one-liners are clarified, not guessed
+  ---
+  duration_ms: 7.961705
+  type: 'test'
+  ...
+# Subtest: hard topic switch favors explicit new operational topic
+ok 371 - hard topic switch favors explicit new operational topic
+  ---
+  duration_ms: 0.941115
+  type: 'test'
+  ...
+# Subtest: closing and reopen messages are separated
+ok 372 - closing and reopen messages are separated
+  ---
+  duration_ms: 2.449869
+  type: 'test'
+  ...
+# Subtest: transaction amounts understand common Indonesian shorthand
+ok 373 - transaction amounts understand common Indonesian shorthand
+  ---
+  duration_ms: 1.046486
+  type: 'test'
+  ...
+# Subtest: waiting duration extraction supports minutes hours and relative language
+ok 374 - waiting duration extraction supports minutes hours and relative language
+  ---
+  duration_ms: 0.805724
+  type: 'test'
+  ...
+# Subtest: attachment classifier does not force every image to deposit
+ok 375 - attachment classifier does not force every image to deposit
+  ---
+  duration_ms: 0.990692
+  type: 'test'
+  ...
+# Subtest: operational priority puts security and transaction above generic complaints
+ok 376 - operational priority puts security and transaction above generic complaints
+  ---
+  duration_ms: 0.304319
+  type: 'test'
+  ...
+# Subtest: topic families separate DP WD access bonus
+ok 377 - topic families separate DP WD access bonus
+  ---
+  duration_ms: 0.153868
+  type: 'test'
+  ...
+# Subtest: sensitive log values are redacted
+ok 378 - sensitive log values are redacted
+  ---
+  duration_ms: 0.828437
+  type: 'test'
+  ...
+# Subtest: fuzzy confidence is bounded
+ok 379 - fuzzy confidence is bounded
+  ---
+  duration_ms: 0.518326
+  type: 'test'
+  ...
+# Subtest: registration validation allows missing email phone but validates required values when present
+ok 380 - registration validation allows missing email phone but validates required values when present
+  ---
+  duration_ms: 0.559035
+  type: 'test'
+  ...
+# Subtest: case expiry is deterministic
+ok 381 - case expiry is deterministic
+  ---
+  duration_ms: 0.402809
+  type: 'test'
+  ...
+# Subtest: contradicting staff status overrides pending state
+ok 382 - contradicting staff status overrides pending state
+  ---
+  duration_ms: 0.442882
+  type: 'test'
+  ...
+# Subtest: bonus state machine blocks transitions after terminal state
+ok 383 - bonus state machine blocks transitions after terminal state
+  ---
+  duration_ms: 0.407816
+  type: 'test'
+  ...
+# Subtest: bonus precedence keeps named campaigns above generic deposit bonus
+ok 384 - bonus precedence keeps named campaigns above generic deposit bonus
+  ---
+  duration_ms: 2.708796
+  type: 'test'
+  ...
+# Subtest: expanded typo dictionary understands common shorthand
+ok 385 - expanded typo dictionary understands common shorthand
+  ---
+  duration_ms: 1.019291
+  type: 'test'
+  ...
+# Subtest: QRIS/barcode missing routes to screenshot-first disturbance flow
+ok 386 - QRIS/barcode missing routes to screenshot-first disturbance flow
+  ---
+  duration_ms: 0.217582
+  type: 'test'
+  ...
+# Subtest: DB contains session-key, case audit, entity, health, expiry and DLQ hardening
+ok 387 - DB contains session-key, case audit, entity, health, expiry and DLQ hardening
+  ---
+  duration_ms: 1.984079
+  type: 'test'
+  ...
+# Subtest: engine contains anti-repeat, topic-switch, audit, entity, reopen and contradiction guards
+ok 388 - engine contains anti-repeat, topic-switch, audit, entity, reopen and contradiction guards
+  ---
+  duration_ms: 1.482034
+  type: 'test'
+  ...
+# Subtest: Telegram bridge requires reply-to-ticket for sensitive operational categories
+ok 389 - Telegram bridge requires reply-to-ticket for sensitive operational categories
+  ---
+  duration_ms: 0.359317
+  type: 'test'
+  ...
+# Subtest: SLA escalation follows configurable base 1x 2x 4x stages
+ok 390 - SLA escalation follows configurable base 1x 2x 4x stages
+  ---
+  duration_ms: 2.385129
+  type: 'test'
+  ...
+# Subtest: ops endpoints expose audit health and dead-letter retry
+ok 391 - ops endpoints expose audit health and dead-letter retry
+  ---
+  duration_ms: 0.415864
+  type: 'test'
+  ...
+# Subtest: deposit cancellation includes explicit cannot-cancel outcome
+ok 392 - deposit cancellation includes explicit cannot-cancel outcome
+  ---
+  duration_ms: 1.124269
+  type: 'test'
+  ...
+# Subtest: takeover release performs audited resync
+ok 393 - takeover release performs audited resync
+  ---
+  duration_ms: 0.801324
+  type: 'test'
+  ...
+# Subtest: deposit done member reply uses requested final wording
+ok 394 - deposit done member reply uses requested final wording
+  ---
+  duration_ms: 3.292515
+  type: 'test'
+  ...
+# Subtest: runtime env example documents current config variables
+ok 395 - runtime env example documents current config variables
+  ---
+  duration_ms: 1.68159
+  type: 'test'
+  ...
+# Subtest: production dependencies are top-level pinned
+ok 396 - production dependencies are top-level pinned
+  ---
+  duration_ms: 0.694961
+  type: 'test'
+  ...
+# Subtest: debug scratch file is not shipped
+ok 397 - debug scratch file is not shipped
+  ---
+  duration_ms: 1.665629
+  type: 'test'
+  ...
+# Subtest: docker install is production only and non-interactive
+ok 398 - docker install is production only and non-interactive
+  ---
+  duration_ms: 0.477884
+  type: 'test'
+  ...
+# Subtest: SLA default and runtime escalation are configuration-driven
+ok 399 - SLA default and runtime escalation are configuration-driven
+  ---
+  duration_ms: 2.70213
+  type: 'test'
+  ...
+# Subtest: anonymous admin send-as reply is accepted only as exact reply-to-ticket
+ok 400 - anonymous admin send-as reply is accepted only as exact reply-to-ticket
+  ---
+  duration_ms: 2.86702
+  type: 'test'
+  ...
+# Subtest: failed telegram reply is reopened and update is retryable
+ok 401 - failed telegram reply is reopened and update is retryable
+  ---
+  duration_ms: 0.452369
+  type: 'test'
+  ...
+# Subtest: human Telegram reply can send during LC Human Takeover
+ok 402 - human Telegram reply can send during LC Human Takeover
+  ---
+  duration_ms: 1.575921
+  type: 'test'
+  ...
+# Subtest: human bridge LC send retries up to three times
+ok 403 - human bridge LC send retries up to three times
+  ---
+  duration_ms: 1.083887
+  type: 'test'
+  ...
+# Subtest: reset credentials reply still formats member response automatically
+ok 404 - reset credentials reply still formats member response automatically
+  ---
+  duration_ms: 1.173766
+  type: 'test'
+  ...
+# Subtest: deposit Telegram keyboard includes DPPGA and BARCODE
+ok 405 - deposit Telegram keyboard includes DPPGA and BARCODE
+  ---
+  duration_ms: 2.942005
+  type: 'test'
+  ...
+# Subtest: DPPGA uses exact member confirmation wording and keeps QRIS review state
+ok 406 - DPPGA uses exact member confirmation wording and keeps QRIS review state
+  ---
+  duration_ms: 2.222896
+  type: 'test'
+  ...
+# Subtest: BARCODE uses exact member confirmation wording
+ok 407 - BARCODE uses exact member confirmation wording
+  ---
+  duration_ms: 1.689698
+  type: 'test'
+  ...
+# Subtest: expanded shorthand normalizer understands common conversational typos
+ok 408 - expanded shorthand normalizer understands common conversational typos
+  ---
+  duration_ms: 2.835027
+  type: 'test'
+  ...
+# Subtest: AI prompt contains explicit continuity contract
+ok 409 - AI prompt contains explicit continuity contract
+  ---
+  duration_ms: 0.665821
+  type: 'test'
+  ...
+# Subtest: deposit keyboard includes DANA TIDAK MASUK action
+ok 410 - deposit keyboard includes DANA TIDAK MASUK action
+  ---
+  duration_ms: 3.360771
+  type: 'test'
+  ...
+# Subtest: DANA TIDAK MASUK sends polite mutation-check guidance
+ok 411 - DANA TIDAK MASUK sends polite mutation-check guidance
+  ---
+  duration_ms: 0.580379
+  type: 'test'
+  ...
+# Subtest: DANA TIDAK MASUK keeps case open waiting for mutation proof
+ok 412 - DANA TIDAK MASUK keeps case open waiting for mutation proof
+  ---
+  duration_ms: 2.150591
+  type: 'test'
+  ...
+# Subtest: common shorthand complaint words are never parsed as user ID
+ok 413 - common shorthand complaint words are never parsed as user ID
+  ---
+  duration_ms: 3.358499
+  type: 'test'
+  ...
+# Subtest: deposit flow asks ID first when ID and proof are both missing
+ok 414 - deposit flow asks ID first when ID and proof are both missing
+  ---
+  duration_ms: 1.150904
+  type: 'test'
+  ...
+# Subtest: free-form requested ID parser is only allowed while WAITING_ID
+ok 415 - free-form requested ID parser is only allowed while WAITING_ID
+  ---
+  duration_ms: 0.968812
+  type: 'test'
+  ...
+# Subtest: explicit user ID is still recognized immediately
+ok 416 - explicit user ID is still recognized immediately
+  ---
+  duration_ms: 0.34247
+  type: 'test'
+  ...
+# Subtest: main conversation renders customer left, true system banner centered, other outbound right
+ok 417 - main conversation renders customer left, true system banner centered, other outbound right
+  ---
+  duration_ms: 2.62773
+  type: 'test'
+  ...
+# Subtest: human request history keeps true system banner centered and other outbound on right
+ok 418 - human request history keeps true system banner centered and other outbound on right
+  ---
+  duration_ms: 1.049731
+  type: 'test'
+  ...
+# Subtest: outbound ai class is styled on the right
+ok 419 - outbound ai class is styled on the right
+  ---
+  duration_ms: 2.044431
+  type: 'test'
+  ...
+# Subtest: reset depo/dp means cancel deposit, not reset password
+ok 420 - reset depo/dp means cancel deposit, not reset password
+  ---
+  duration_ms: 5.727575
+  type: 'test'
+  ...
+# Subtest: cancel/batalkan/hapus/reject deposit all route to DEPOSIT_CANCEL
+ok 421 - cancel/batalkan/hapus/reject deposit all route to DEPOSIT_CANCEL
+  ---
+  duration_ms: 0.395387
+  type: 'test'
+  ...
+# Subtest: reset password remains FORGOT_PASSWORD and does not become deposit cancel
+ok 422 - reset password remains FORGOT_PASSWORD and does not become deposit cancel
+  ---
+  duration_ms: 0.414612
+  type: 'test'
+  ...
+# Subtest: plain deposit complaint remains DEPOSIT_PROBLEM
+ok 423 - plain deposit complaint remains DEPOSIT_PROBLEM
+  ---
+  duration_ms: 0.176033
+  type: 'test'
+  ...
+# Subtest: conversation rendering uses stable message fingerprint
+ok 424 - conversation rendering uses stable message fingerprint
+  ---
+  duration_ms: 2.463514
+  type: 'test'
+  ...
+# Subtest: active text selection is not destroyed by polling
+ok 425 - active text selection is not destroyed by polling
+  ---
+  duration_ms: 2.404765
+  type: 'test'
+  ...
+# Subtest: scroll position is preserved and auto-scroll only happens near bottom
+ok 426 - scroll position is preserved and auto-scroll only happens near bottom
+  ---
+  duration_ms: 0.770674
+  type: 'test'
+  ...
+# Subtest: live dashboard separates conversation and inbox polling cadence
+ok 427 - live dashboard separates conversation and inbox polling cadence
+  ---
+  duration_ms: 0.682103
+  type: 'test'
+  ...
+# Subtest: copy button exists per message and clipboard copy is supported
+ok 428 - copy button exists per message and clipboard copy is supported
+  ---
+  duration_ms: 1.116728
+  type: 'test'
+  ...
+# Subtest: message text is explicitly selectable in CSS
+ok 429 - message text is explicitly selectable in CSS
+  ---
+  duration_ms: 0.41855
+  type: 'test'
+  ...
+# Subtest: stale in-flight chat response cannot paint another room
+ok 430 - stale in-flight chat response cannot paint another room
+  ---
+  duration_ms: 0.962851
+  type: 'test'
+  ...
+# Subtest: images are lazy loaded and asynchronously decoded
+ok 431 - images are lazy loaded and asynchronously decoded
+  ---
+  duration_ms: 0.766554
+  type: 'test'
+  ...
+# Subtest: real promo/system banner stays System instead of becoming CS
+ok 432 - real promo/system banner stays System instead of becoming CS
+  ---
+  duration_ms: 2.273473
+  type: 'test'
+  ...
+# Subtest: ordinary outbound system/action messages still render as CS on right
+ok 433 - ordinary outbound system/action messages still render as CS on right
+  ---
+  duration_ms: 0.606492
+  type: 'test'
+  ...
+# Subtest: system banner css remains centered
+ok 434 - system banner css remains centered
+  ---
+  duration_ms: 1.735903
+  type: 'test'
+  ...
+# Subtest: learning history scanner skips stale-session items instead of throwing
+ok 435 - learning history scanner skips stale-session items instead of throwing
+  ---
+  duration_ms: 1.750379
+  type: 'test'
+  ...
+# Subtest: learning scan endpoint treats stale history as non-fatal
+ok 436 - learning scan endpoint treats stale history as non-fatal
+  ---
+  duration_ms: 0.356224
+  type: 'test'
+  ...
+# Subtest: learning scan UI does not popup raw stale-session error
+ok 437 - learning scan UI does not popup raw stale-session error
+  ---
+  duration_ms: 0.73448
+  type: 'test'
+  ...
+# Subtest: true System promo stays System identity
+ok 438 - true System promo stays System identity
+  ---
+  duration_ms: 2.034038
+  type: 'test'
+  ...
+# Subtest: historical learning scan skips stale sessions instead of aborting
+ok 439 - historical learning scan skips stale sessions instead of aborting
+  ---
+  duration_ms: 4.10556
+  type: 'test'
+  ...
+# Subtest: learning scan returns processed skipped stale and failed counts
+ok 440 - learning scan returns processed skipped stale and failed counts
+  ---
+  duration_ms: 1.310756
+  type: 'test'
+  ...
+# Subtest: reset password parses compact number + DANA + account holder name in one message
+ok 441 - reset password parses compact number + DANA + account holder name in one message
+  ---
+  duration_ms: 5.474066
+  type: 'test'
+  ...
+# Subtest: reset parser also supports type + number + multiword name
+ok 442 - reset parser also supports type + number + multiword name
+  ---
+  duration_ms: 1.775815
+  type: 'test'
+  ...
+# Subtest: Knowledge Base and Responses Manual are both injected into live AI sources
+ok 443 - Knowledge Base and Responses Manual are both injected into live AI sources
+  ---
+  duration_ms: 3.014529
+  type: 'test'
+  ...
+# Subtest: Tanya Staff saves approved guidance without member delivery during Human Takeover
+ok 444 - Tanya Staff saves approved guidance without member delivery during Human Takeover
+  ---
+  duration_ms: 4.827869
+  type: 'test'
+  ...
+# Subtest: Alt+ArrowUp and Alt+ArrowDown navigate chat list
+ok 445 - Alt+ArrowUp and Alt+ArrowDown navigate chat list
+  ---
+  duration_ms: 0.86808
+  type: 'test'
+  ...
+# Subtest: hashtag shortcut loads exact Responses Manual entry for manual reply
+ok 446 - hashtag shortcut loads exact Responses Manual entry for manual reply
+  ---
+  duration_ms: 0.987035
+  type: 'test'
+  ...
+# Subtest: claim bonus harian with inline ID is classified and ID is extracted
+ok 447 - claim bonus harian with inline ID is classified and ID is extracted
+  ---
+  duration_ms: 4.176529
+  type: 'test'
+  ...
+# Subtest: customer message after authoritative System banner is not greeted again
+ok 448 - customer message after authoritative System banner is not greeted again
+  ---
+  duration_ms: 1.584723
+  type: 'test'
+  ...
+# Subtest: specific bonus with inline ID routes to Telegram and waiting reply
+ok 449 - specific bonus with inline ID routes to Telegram and waiting reply
+  ---
+  duration_ms: 1.071017
+  type: 'test'
+  ...
+# Subtest: new-session banner keeps old case state isolated
+ok 450 - new-session banner keeps old case state isolated
+  ---
+  duration_ms: 1.675469
+  type: 'test'
+  ...
+# Subtest: typing \# opens a real-time Responses Manual dropdown
+ok 451 - typing \# opens a real-time Responses Manual dropdown
+  ---
+  duration_ms: 1.814386
+  type: 'test'
+  ...
+# Subtest: shortcut dropdown supports keyboard navigation and selection
+ok 452 - shortcut dropdown supports keyboard navigation and selection
+  ---
+  duration_ms: 0.65296
+  type: 'test'
+  ...
+# Subtest: shortcut selection replaces only active \# token with response content
+ok 453 - shortcut selection replaces only active \# token with response content
+  ---
+  duration_ms: 4.36506
+  type: 'test'
+  ...
+# Subtest: manual responses get ranking boost and dropdown shows preview
+ok 454 - manual responses get ranking boost and dropdown shows preview
+  ---
+  duration_ms: 0.72781
+  type: 'test'
+  ...
+# Subtest: autocomplete CSS is present
+ok 455 - autocomplete CSS is present
+  ---
+  duration_ms: 0.519782
+  type: 'test'
+  ...
+# Subtest: hard topic switch compares semantic workflow intent, not raw WD_STATUS type
+ok 456 - hard topic switch compares semantic workflow intent, not raw WD_STATUS type
+  ---
+  duration_ms: 1.825499
+  type: 'test'
+  ...
+# Subtest: WD pending workflow survives repeated member followups
+ok 457 - WD pending workflow survives repeated member followups
+  ---
+  duration_ms: 1.320121
+  type: 'test'
+  ...
+# Subtest: customer thread-id changes cannot restart greeting during active operational case
+ok 458 - customer thread-id changes cannot restart greeting during active operational case
+  ---
+  duration_ms: 1.980252
+  type: 'test'
+  ...
+# Subtest: delayed system banner is validated before new-session reset
+ok 459 - delayed system banner is validated before new-session reset
+  ---
+  duration_ms: 1.244346
+  type: 'test'
+  ...
+# Subtest: WD continuation phrases stay in the active WD case and do not restart collection
+ok 460 - WD continuation phrases stay in the active WD case and do not restart collection
+  ---
+  duration_ms: 1.185301
+  type: 'test'
+  ...
+# Subtest: OMTOGEL system promo is recognized as authoritative welcome banner
+ok 461 - OMTOGEL system promo is recognized as authoritative welcome banner
+  ---
+  duration_ms: 2.901111
+  type: 'test'
+  ...
+# Subtest: fresh authoritative banner bypasses stale active-case no-thread suppression
+ok 462 - fresh authoritative banner bypasses stale active-case no-thread suppression
+  ---
+  duration_ms: 1.191046
+  type: 'test'
+  ...
+# Subtest: authoritative banner resets session only after validation and greets once
+ok 463 - authoritative banner resets session only after validation and greets once
+  ---
+  duration_ms: 1.48406
+  type: 'test'
+  ...
+# Subtest: old delayed banners remain suppressible
+ok 464 - old delayed banners remain suppressible
+  ---
+  duration_ms: 1.754729
+  type: 'test'
+  ...
+# Subtest: poller detects welcome banner independently of author type
+ok 465 - poller detects welcome banner independently of author type
+  ---
+  duration_ms: 1.440178
+  type: 'test'
+  ...
+# Subtest: welcome System event never activates Human Takeover
+ok 466 - welcome System event never activates Human Takeover
+  ---
+  duration_ms: 1.153725
+  type: 'test'
+  ...
+# Subtest: greeting trigger tolerates provider delay up to ten minutes
+ok 467 - greeting trigger tolerates provider delay up to ten minutes
+  ---
+  duration_ms: 1.263442
+  type: 'test'
+  ...
+# Subtest: hours-old System banners are explicitly suppressed
+ok 468 - hours-old System banners are explicitly suppressed
+  ---
+  duration_ms: 1.220429
+  type: 'test'
+  ...
+# Subtest: End Chat uses documented v3.6 deactivate_chat payload only
+ok 469 - End Chat uses documented v3.6 deactivate_chat payload only
+  ---
+  duration_ms: 1.168408
+  type: 'test'
+  ...
+# Subtest: End Chat is idempotent for already inactive or missing chats
+ok 470 - End Chat is idempotent for already inactive or missing chats
+  ---
+  duration_ms: 1.894563
+  type: 'test'
+  ...
+# Subtest: dashboard closes local conversation only after LC endChat succeeds
+ok 471 - dashboard closes local conversation only after LC endChat succeeds
+  ---
+  duration_ms: 0.57402
+  type: 'test'
+  ...
+# Subtest: README and package declare one current release version
+ok 472 - README and package declare one current release version
+  ---
+  duration_ms: 1.644067
+  type: 'test'
+  ...
+# Subtest: Docker install is reproducible from package-lock
+ok 473 - Docker install is reproducible from package-lock
+  ---
+  duration_ms: 0.34339
+  type: 'test'
+  ...
+# Subtest: full release gate includes browser QA
+ok 474 - full release gate includes browser QA
+  ---
+  duration_ms: 2.501936
+  type: 'test'
+  ...
+# Subtest: Dockerfile does not depend on hidden npmrc file
+ok 475 - Dockerfile does not depend on hidden npmrc file
+  ---
+  duration_ms: 3.751016
+  type: 'test'
+  ...
+# Subtest: Docker runtime entrypoint is server.js on Node 22 alpine
+ok 476 - Docker runtime entrypoint is server.js on Node 22 alpine
+  ---
+  duration_ms: 0.359125
+  type: 'test'
+  ...
+# Subtest: session boundary prioritizes stable LiveChat thread and uses event-keyed welcome fallback
+ok 477 - session boundary prioritizes stable LiveChat thread and uses event-keyed welcome fallback
+  ---
+  duration_ms: 1.868849
+  type: 'test'
+  ...
+# Subtest: poller retries a fresh welcome banner even when message was already inserted
+ok 478 - poller retries a fresh welcome banner even when message was already inserted
+  ---
+  duration_ms: 0.232701
+  type: 'test'
+  ...
+# Subtest: welcome retry remains idempotent through processGreetingTrigger claim
+ok 479 - welcome retry remains idempotent through processGreetingTrigger claim
+  ---
+  duration_ms: 2.057562
+  type: 'test'
+  ...
+# Subtest: open human request acknowledges every new member message unless human takeover
+ok 480 - open human request acknowledges every new member message unless human takeover
+  ---
+  duration_ms: 2.350734
+  type: 'test'
+  ...
+# Subtest: ASK_HUMAN and HANDOFF send a safe holding reply
+ok 481 - ASK_HUMAN and HANDOFF send a safe holding reply
+  ---
+  duration_ms: 0.965706
+  type: 'test'
+  ...
+# Subtest: empty AI reply is converted to safe member response
+ok 482 - empty AI reply is converted to safe member response
+  ---
+  duration_ms: 3.803115
+  type: 'test'
+  ...
+# Subtest: AI exceptions still acknowledge member while routing staff
+ok 483 - AI exceptions still acknowledge member while routing staff
+  ---
+  duration_ms: 1.429518
+  type: 'test'
+  ...
+# Subtest: required Telegram delivery failure no longer leaves member silent
+ok 484 - required Telegram delivery failure no longer leaves member silent
+  ---
+  duration_ms: 1.072866
+  type: 'test'
+  ...
+# Subtest: Human Takeover still prevents AI from replying
+ok 485 - Human Takeover still prevents AI from replying
+  ---
+  duration_ms: 2.268205
+  type: 'test'
+  ...
+# Subtest: welcome banner has priority over customer classification in poller
+ok 486 - welcome banner has priority over customer classification in poller
+  ---
+  duration_ms: 1.648437
+  type: 'test'
+  ...
+# Subtest: customer processor hard-routes welcome banner to greeting trigger
+ok 487 - customer processor hard-routes welcome banner to greeting trigger
+  ---
+  duration_ms: 1.406613
+  type: 'test'
+  ...
+# Subtest: authoritative OMTOGEL banner cannot be blocked by stale greeting_enabled setting
+ok 488 - authoritative OMTOGEL banner cannot be blocked by stale greeting_enabled setting
+  ---
+  duration_ms: 2.302415
+  type: 'test'
+  ...
+# Subtest: system banner never reaches OpenAI generic reply path
+ok 489 - system banner never reaches OpenAI generic reply path
+  ---
+  duration_ms: 1.338341
+  type: 'test'
+  ...
+# Subtest: poller primes System session before customer processing
+ok 490 - poller primes System session before customer processing
+  ---
+  duration_ms: 1.385945
+  type: 'test'
+  ...
+# Subtest: welcome preflight persists System boundary before greeting/session reset
+ok 491 - welcome preflight persists System boundary before greeting/session reset
+  ---
+  duration_ms: 1.569627
+  type: 'test'
+  ...
+# Subtest: late banner cannot append greeting after operational reply
+ok 492 - late banner cannot append greeting after operational reply
+  ---
+  duration_ms: 1.428879
+  type: 'test'
+  ...
+# Subtest: member burst debounce is long enough to combine short fragments
+ok 493 - member burst debounce is long enough to combine short fragments
+  ---
+  duration_ms: 0.342895
+  type: 'test'
+  ...
+# Subtest: operational history is session-boundary scoped
+ok 494 - operational history is session-boundary scoped
+  ---
+  duration_ms: 2.902966
+  type: 'test'
+  ...
+# Subtest: TOTP secret persists as valid base32 material and verifies current/adjacent window
+ok 495 - TOTP secret persists as valid base32 material and verifies current/adjacent window
+  ---
+  duration_ms: 2.935042
+  type: 'test'
+  ...
+# Subtest: otpauth URI is compatible with authenticator apps
+ok 496 - otpauth URI is compatible with authenticator apps
+  ---
+  duration_ms: 0.258797
+  type: 'test'
+  ...
+# Subtest: admin session expires after one hour inactivity but refresh extends last activity
+ok 497 - admin session expires after one hour inactivity but refresh extends last activity
+  ---
+  duration_ms: 1.052201
+  type: 'test'
+  ...
+# Subtest: pending 2FA session cannot become an admin session
+ok 498 - pending 2FA session cannot become an admin session
+  ---
+  duration_ms: 0.460215
+  type: 'test'
+  ...
+# Subtest: shared brain has a dedicated Postgres connection with DATABASE_URL fallback
+ok 499 - shared brain has a dedicated Postgres connection with DATABASE_URL fallback
+  ---
+  duration_ms: 1.569721
+  type: 'test'
+  ...
+# Subtest: all six AI sources are read from shared brain and injected into engine
+ok 500 - all six AI sources are read from shared brain and injected into engine
+  ---
+  duration_ms: 0.834008
+  type: 'test'
+  ...
+# Subtest: runtime Telegram and human bridge remain on isolated runtime pool
+ok 501 - runtime Telegram and human bridge remain on isolated runtime pool
+  ---
+  duration_ms: 0.998361
+  type: 'test'
+  ...
+# Subtest: Belajar dari CS crosses runtime history to shared brain without cross-db SQL join
+ok 502 - Belajar dari CS crosses runtime history to shared brain without cross-db SQL join
+  ---
+  duration_ms: 0.382684
+  type: 'test'
+  ...
+# Subtest: admin Knowledge and AI Rules endpoints write to shared brain
+ok 503 - admin Knowledge and AI Rules endpoints write to shared brain
+  ---
+  duration_ms: 0.87352
+  type: 'test'
+  ...
+# Subtest: CS learning ON CONFLICT matches partial unique index
+ok 504 - CS learning ON CONFLICT matches partial unique index
+  ---
+  duration_ms: 1.147671
+  type: 'test'
+  ...
+# Subtest: Telegram fast polling is isolated from maintenance backlog
+ok 505 - Telegram fast polling is isolated from maintenance backlog
+  ---
+  duration_ms: 0.252212
+  type: 'test'
+  ...
+# Subtest: CS learning backfill is delayed and batched so bridge starts responsive
+ok 506 - CS learning backfill is delayed and batched so bridge starts responsive
+  ---
+  duration_ms: 0.242676
+  type: 'test'
+  ...
+# Subtest: Telegram callback is ACKed before Postgres update claim
+ok 507 - Telegram callback is ACKed before Postgres update claim
+  ---
+  duration_ms: 0.208126
+  type: 'test'
+  ...
+# Subtest: v1.30.3 completed Telegram CTA keeps LiveChat identity trail
+ok 508 - v1.30.3 completed Telegram CTA keeps LiveChat identity trail
+  ---
+  duration_ms: 3.930564
+  type: 'test'
+  ...
+# Subtest: v1.30.3 user id for Telegram audit is resolved from workflow/request/context
+ok 509 - v1.30.3 user id for Telegram audit is resolved from workflow/request/context
+  ---
+  duration_ms: 0.293453
+  type: 'test'
+  ...
+# Subtest: v1.30.3 photo tickets keep original message and emit identity-preserving completion reply if text edit is unavailable
+ok 510 - v1.30.3 photo tickets keep original message and emit identity-preserving completion reply if text edit is unavailable
+  ---
+  duration_ms: 0.423057
+  type: 'test'
+  ...
+# Subtest: production password hashing uses scrypt and rejects wrong password
+ok 511 - production password hashing uses scrypt and rejects wrong password
+  ---
+  duration_ms: 172.403115
+  type: 'test'
+  ...
+# Subtest: 2FA recovery codes are unique-looking and one-way hashable
+ok 512 - 2FA recovery codes are unique-looking and one-way hashable
+  ---
+  duration_ms: 1.689052
+  type: 'test'
+  ...
+# Subtest: persistent login throttle and configurable CTA schema exist
+ok 513 - persistent login throttle and configurable CTA schema exist
+  ---
+  duration_ms: 2.297996
+  type: 'test'
+  ...
+# Subtest: telegram configurable CTA remains case-specific and disables completed buttons
+ok 514 - telegram configurable CTA remains case-specific and disables completed buttons
+  ---
+  duration_ms: 0.255243
+  type: 'test'
+  ...
+# Subtest: knowledge center supports metadata and CRUD UI
+ok 515 - knowledge center supports metadata and CRUD UI
+  ---
+  duration_ms: 2.332937
+  type: 'test'
+  ...
+# Subtest: dashboard includes required production operations menus
+ok 516 - dashboard includes required production operations menus
+  ---
+  duration_ms: 0.509361
+  type: 'test'
+  ...
+# Subtest: Railway env exposes password hash and graceful shutdown is wired
+ok 517 - Railway env exposes password hash and graceful shutdown is wired
+  ---
+  duration_ms: 0.365072
+  type: 'test'
+  ...
+# Subtest: Website Profile is editable and injected into bot sources
+ok 518 - Website Profile is editable and injected into bot sources
+  ---
+  duration_ms: 2.007795
+  type: 'test'
+  ...
+# Subtest: active alternate links are authoritative and prioritized
+ok 519 - active alternate links are authoritative and prioritized
+  ---
+  duration_ms: 0.255022
+  type: 'test'
+  ...
+# Subtest: Rules Knowledge Responses support portable bulk backup and restore
+ok 520 - Rules Knowledge Responses support portable bulk backup and restore
+  ---
+  duration_ms: 0.476708
+  type: 'test'
+  ...
+# Subtest: test-derived behavior pack seeds context DP WD reset loss and bridge safety
+ok 521 - test-derived behavior pack seeds context DP WD reset loss and bridge safety
+  ---
+  duration_ms: 0.305945
+  type: 'test'
+  ...
+# Subtest: Telegram fast path remains ACK-first and whitelist fails closed when selected
+ok 522 - Telegram fast path remains ACK-first and whitelist fails closed when selected
+  ---
+  duration_ms: 0.238242
+  type: 'test'
+  ...
+# Subtest: public health is minimal and webhook validates raw request bytes
+ok 523 - public health is minimal and webhook validates raw request bytes
+  ---
+  duration_ms: 2.960112
+  type: 'test'
+  ...
+# Subtest: mobile dashboard uses fixed bottom control navigation
+ok 524 - mobile dashboard uses fixed bottom control navigation
+  ---
+  duration_ms: 0.240172
+  type: 'test'
+  ...
+# Subtest: manual chat composer exposes image picker and preview
+ok 525 - manual chat composer exposes image picker and preview
+  ---
+  duration_ms: 2.020426
+  type: 'test'
+  ...
+# Subtest: server image route requires takeover and stores outbound attachment
+ok 526 - server image route requires takeover and stores outbound attachment
+  ---
+  duration_ms: 2.224666
+  type: 'test'
+  ...
+# Subtest: livechat client uploads then sends file event
+ok 527 - livechat client uploads then sends file event
+  ---
+  duration_ms: 0.457194
+  type: 'test'
+  ...
+# Subtest: stale row data is replaced by latest store item
+ok 528 - stale row data is replaced by latest store item
+  ---
+  duration_ms: 1.210672
+  type: 'test'
+  ...
+# Subtest: selected chat survives reorder
+ok 529 - selected chat survives reorder
+  ---
+  duration_ms: 0.84668
+  type: 'test'
+  ...
+# Subtest: closed chat removal clears selected state
+ok 530 - closed chat removal clears selected state
+  ---
+  duration_ms: 0.183252
+  type: 'test'
+  ...
+# Subtest: rapid switch is guarded by abort and detail request version
+ok 531 - rapid switch is guarded by abort and detail request version
+  ---
+  duration_ms: 0.191888
+  type: 'test'
+  ...
+# Subtest: detail error and timeout always terminate loading
+ok 532 - detail error and timeout always terminate loading
+  ---
+  duration_ms: 0.124828
+  type: 'test'
+  ...
+# Subtest: polling uses single-flight recursive timeout, latest-request-wins and backoff
+ok 533 - polling uses single-flight recursive timeout, latest-request-wins and backoff
+  ---
+  duration_ms: 1.47235
+  type: 'test'
+  ...
+# Subtest: inbox render is keyed and reorders existing rows
+ok 534 - inbox render is keyed and reorders existing rows
+  ---
+  duration_ms: 0.178262
+  type: 'test'
+  ...
+# Subtest: message delta endpoint and duplicate suppression exist
+ok 535 - message delta endpoint and duplicate suppression exist
+  ---
+  duration_ms: 0.18998
+  type: 'test'
+  ...
+# Subtest: keyset pagination is deterministic
+ok 536 - keyset pagination is deterministic
+  ---
+  duration_ms: 0.341333
+  type: 'test'
+  ...
+# Subtest: takeover return-ai and end-chat are serialized
+ok 537 - takeover return-ai and end-chat are serialized
+  ---
+  duration_ms: 0.768323
+  type: 'test'
+  ...
+# Subtest: 1366 desktop layout has bounded grid and no root horizontal overflow
+ok 538 - 1366 desktop layout has bounded grid and no root horizontal overflow
+  ---
+  duration_ms: 0.17442
+  type: 'test'
+  ...
+# Subtest: 57P01 and connection timeout are classified as transient PostgreSQL errors
+ok 539 - 57P01 and connection timeout are classified as transient PostgreSQL errors
+  ---
+  duration_ms: 1.041028
+  type: 'test'
+  ...
+# Subtest: pool error handler consumes idle client error without throwing
+ok 540 - pool error handler consumes idle client error without throwing
+  ---
+  duration_ms: 2.327221
+  type: 'test'
+  ...
+# Subtest: pool error handler is idempotent for the same pool/name
+ok 541 - pool error handler is idempotent for the same pool/name
+  ---
+  duration_ms: 0.358153
+  type: 'test'
+  ...
+# Subtest: startup retry retries transient DB errors and succeeds
+ok 542 - startup retry retries transient DB errors and succeeds
+  ---
+  duration_ms: 1.323604
+  type: 'test'
+  ...
+# Subtest: startup retry does not retry non-transient SQL errors
+ok 543 - startup retry does not retry non-transient SQL errors
+  ---
+  duration_ms: 0.824093
+  type: 'test'
+  ...
+# Subtest: authoritative system welcome banner bypasses stale previous-session human takeover guard
+ok 544 - authoritative system welcome banner bypasses stale previous-session human takeover guard
+  ---
+  duration_ms: 2.14162
+  type: 'test'
+  ...
+# Subtest: canned shortcut endpoint supports live query and empty query for \# menu
+ok 545 - canned shortcut endpoint supports live query and empty query for \# menu
+  ---
+  duration_ms: 1.568952
+  type: 'test'
+  ...
+# Subtest: conversation composer asks shortcut endpoint and shows up to 20 matches
+ok 546 - conversation composer asks shortcut endpoint and shows up to 20 matches
+  ---
+  duration_ms: 0.424694
+  type: 'test'
+  ...
+# Subtest: modular Conversations keeps Newest Alt+Arrow navigation footer
+ok 547 - modular Conversations keeps Newest Alt+Arrow navigation footer
+  ---
+  duration_ms: 3.363008
+  type: 'test'
+  ...
+# Subtest: Alt+Arrow navigation is implemented in modular conversations runtime
+ok 548 - Alt+Arrow navigation is implemented in modular conversations runtime
+  ---
+  duration_ms: 0.407389
+  type: 'test'
+  ...
+# Subtest: keyboard navigation footer remains scoped to Conversations CSS
+ok 549 - keyboard navigation footer remains scoped to Conversations CSS
+  ---
+  duration_ms: 0.187385
+  type: 'test'
+  ...
+# Subtest: v1.32 list_chats uses documented active filter and page_id-only continuation
+ok 550 - v1.32 list_chats uses documented active filter and page_id-only continuation
+  ---
+  duration_ms: 3.085178
+  type: 'test'
+  ...
+# Subtest: v1.32 full pagination has no application page cap at 5000 active chats
+ok 551 - v1.32 full pagination has no application page cap at 5000 active chats
+  ---
+  duration_ms: 8.256499
+  type: 'test'
+  ...
+# Subtest: v1.32 webhook normalizer recognizes incoming events and deactivation
+ok 552 - v1.32 webhook normalizer recognizes incoming events and deactivation
+  ---
+  duration_ms: 0.440202
+  type: 'test'
+  ...
+# Subtest: v1.32 durable queue uses PostgreSQL SKIP LOCKED and stale reclaim
+ok 553 - v1.32 durable queue uses PostgreSQL SKIP LOCKED and stale reclaim
+  ---
+  duration_ms: 2.995084
+  type: 'test'
+  ...
+# Subtest: v1.32 closed chat is guarded before outbound send
+ok 554 - v1.32 closed chat is guarded before outbound send
+  ---
+  duration_ms: 3.175249
+  type: 'test'
+  ...
+# Subtest: v1.32 customer-event processing ledger retries a persisted event after reply failure
+ok 555 - v1.32 customer-event processing ledger retries a persisted event after reply failure
+  ---
+  duration_ms: 2.655766
+  type: 'test'
+  ...
+# Subtest: v1.32 ingress serializes jobs per chat and deactivation closes the send gate immediately
+ok 556 - v1.32 ingress serializes jobs per chat and deactivation closes the send gate immediately
+  ---
+  duration_ms: 5.313206
+  type: 'test'
+  ...
+# Subtest: v1.32 send_event payloads match Agent Chat Web API v3.6 exactly
+ok 557 - v1.32 send_event payloads match Agent Chat Web API v3.6 exactly
+  ---
+  duration_ms: 0.860413
+  type: 'test'
+  ...
+# Subtest: v1.32 cancelled close-race jobs cannot be resurrected by a finishing worker
+ok 558 - v1.32 cancelled close-race jobs cannot be resurrected by a finishing worker
+  ---
+  duration_ms: 1.997357
+  type: 'test'
+  ...
+# Subtest: v1.32 one-second poller is discovery-only and never waits on AI processing
+ok 559 - v1.32 one-second poller is discovery-only and never waits on AI processing
+  ---
+  duration_ms: 0.682166
+  type: 'test'
+  ...
+# Subtest: v1.32 stale deactivation from an older thread cannot close a newer reused chat session
+ok 560 - v1.32 stale deactivation from an older thread cannot close a newer reused chat session
+  ---
+  duration_ms: 1.273455
+  type: 'test'
+  ...
+# Subtest: v1.32.1 sendMessage repairs requester membership on the specific LiveChat 403 and retries once
+ok 561 - v1.32.1 sendMessage repairs requester membership on the specific LiveChat 403 and retries once
+  ---
+  duration_ms: 2.314567
+  type: 'test'
+  ...
+# Subtest: v1.32.1 requester recovery applies to file events too
+ok 562 - v1.32.1 requester recovery applies to file events too
+  ---
+  duration_ms: 0.585404
+  type: 'test'
+  ...
+# Subtest: v1.32.1 arbitrary 403 is never hidden as a membership problem
+ok 563 - v1.32.1 arbitrary 403 is never hidden as a membership problem
+  ---
+  duration_ms: 0.865936
+  type: 'test'
+  ...
+# Subtest: v1.32.1 already-present race during membership recovery is idempotent
+ok 564 - v1.32.1 already-present race during membership recovery is idempotent
+  ---
+  duration_ms: 1.705233
+  type: 'test'
+  ...
+# Subtest: v1.32.1 real HTTP path handles LiveChat 403 membership recovery without duplicate retry loop
+ok 565 - v1.32.1 real HTTP path handles LiveChat 403 membership recovery without duplicate retry loop
+  ---
+  duration_ms: 66.482286
+  type: 'test'
+  ...
+# Subtest: v1.32.1 health state is reset on boot and stale legacy integration names are hidden
+ok 566 - v1.32.1 health state is reset on boot and stale legacy integration names are hidden
+  ---
+  duration_ms: 7.639638
+  type: 'test'
+  ...
+# Subtest: v1.32.1 operations health cannot report ok true while an integration is ERROR
+ok 567 - v1.32.1 operations health cannot report ok true while an integration is ERROR
+  ---
+  duration_ms: 1.332167
+  type: 'test'
+  ...
+# Subtest: v1.32.2 Railway env documents requester user id and production UI checks runtime LiveChat health
+ok 568 - v1.32.2 Railway env documents requester user id and production UI checks runtime LiveChat health
+  ---
+  duration_ms: 0.496906
+  type: 'test'
+  ...
+# Subtest: v1.32.2 never guesses numeric LIVECHAT_ACCOUNT_ID as add_user_to_chat user_id
+ok 569 - v1.32.2 never guesses numeric LIVECHAT_ACCOUNT_ID as add_user_to_chat user_id
+  ---
+  duration_ms: 2.727056
+  type: 'test'
+  ...
+# Subtest: v1.32.2 can safely infer requester id when account id is clearly an email
+ok 570 - v1.32.2 can safely infer requester id when account id is clearly an email
+  ---
+  duration_ms: 0.496307
+  type: 'test'
+  ...
+# Subtest: v1.32.2 rewrites LiveChat 422 user_id not found into actionable requester identity error
+ok 571 - v1.32.2 rewrites LiveChat 422 user_id not found into actionable requester identity error
+  ---
+  duration_ms: 1.147247
+  type: 'test'
+  ...
+# Subtest: v1.32.2 config no longer falls back requester id to LIVECHAT_ACCOUNT_ID
+ok 572 - v1.32.2 config no longer falls back requester id to LIVECHAT_ACCOUNT_ID
+  ---
+  duration_ms: 0.701895
+  type: 'test'
+  ...
+# Subtest: v1.32.3 uses newest LiveChat thread, not Array.at(-1)
+ok 573 - v1.32.3 uses newest LiveChat thread, not Array.at(-1)
+  ---
+  duration_ms: 1.842291
+  type: 'test'
+  ...
+# Subtest: v1.32.3 get_chat detail overrides stale list summary lifecycle state
+ok 574 - v1.32.3 get_chat detail overrides stale list summary lifecycle state
+  ---
+  duration_ms: 0.345942
+  type: 'test'
+  ...
+# Subtest: v1.32.3 normalizes provider Chat not active into deterministic 410
+ok 575 - v1.32.3 normalizes provider Chat not active into deterministic 410
+  ---
+  duration_ms: 24.237895
+  type: 'test'
+  ...
+# Subtest: v1.32.3 deep sync verifies missing chats before closing them
+ok 576 - v1.32.3 deep sync verifies missing chats before closing them
+  ---
+  duration_ms: 0.234863
+  type: 'test'
+  ...
+# Subtest: v1.32.3 manual send/image removes provider-confirmed inactive conversation
+ok 577 - v1.32.3 manual send/image removes provider-confirmed inactive conversation
+  ---
+  duration_ms: 0.1752
+  type: 'test'
+  ...
+# Subtest: v1.32.3 checked-out PostgreSQL clients have an error listener
+ok 578 - v1.32.3 checked-out PostgreSQL clients have an error listener
+  ---
+  duration_ms: 0.106996
+  type: 'test'
+  ...
+# Subtest: v1.32.3 database transactions use the same dedicated client
+ok 579 - v1.32.3 database transactions use the same dedicated client
+  ---
+  duration_ms: 0.23785
+  type: 'test'
+  ...
+# Subtest: v1.32.4 same-thread session resolver is serialized with a PostgreSQL advisory lock
+ok 580 - v1.32.4 same-thread session resolver is serialized with a PostgreSQL advisory lock
+  ---
+  duration_ms: 1.590687
+  type: 'test'
+  ...
+# Subtest: v1.32.4 session identity is idempotent on chat_id + session_key
+ok 581 - v1.32.4 session identity is idempotent on chat_id + session_key
+  ---
+  duration_ms: 0.294604
+  type: 'test'
+  ...
+# Subtest: v1.32.4 closed session only reopens for a confirmed different provider thread or authoritative fallback
+ok 582 - v1.32.4 closed session only reopens for a confirmed different provider thread or authoritative fallback
+  ---
+  duration_ms: 0.232236
+  type: 'test'
+  ...
+# Subtest: v1.32.4 confirmed close is serialized and removes inbox visibility before commit
+ok 583 - v1.32.4 confirmed close is serialized and removes inbox visibility before commit
+  ---
+  duration_ms: 0.315558
+  type: 'test'
+  ...
+# Subtest: v1.32.4 stale thread deactivation cannot close a newer thread
+ok 584 - v1.32.4 stale thread deactivation cannot close a newer thread
+  ---
+  duration_ms: 0.155427
+  type: 'test'
+  ...
+# Subtest: v1.32.4 routing_status closed is provider-confirmed inactive even without active boolean
+ok 585 - v1.32.4 routing_status closed is provider-confirmed inactive even without active boolean
+  ---
+  duration_ms: 0.394915
+  type: 'test'
+  ...
+# Subtest: v1.32.4 public-agent capacity is classified as deterministic non-retryable provider limit
+ok 586 - v1.32.4 public-agent capacity is classified as deterministic non-retryable provider limit
+  ---
+  duration_ms: 1.342761
+  type: 'test'
+  ...
+# Subtest: v1.32.4 engine does not overwrite explicit non-retryable LiveChat errors
+ok 587 - v1.32.4 engine does not overwrite explicit non-retryable LiveChat errors
+  ---
+  duration_ms: 0.179658
+  type: 'test'
+  ...
+# Subtest: v1.32.4 conversation/session sync resolves unique conflict on provider session key
+ok 588 - v1.32.4 conversation/session sync resolves unique conflict on provider session key
+  ---
+  duration_ms: 0.38202
+  type: 'test'
+  ...
+# Subtest: v1.32.4 archive remains session-scoped and invisible alone is not treated as closed
+ok 589 - v1.32.4 archive remains session-scoped and invisible alone is not treated as closed
+  ---
+  duration_ms: 0.594239
+  type: 'test'
+  ...
+# Subtest: v1.32.4 confirmed close can archive zero-message session metadata
+ok 590 - v1.32.4 confirmed close can archive zero-message session metadata
+  ---
+  duration_ms: 0.232172
+  type: 'test'
+  ...
+# Subtest: fresh session generic clarification never claims an old problem exists
+ok 591 - fresh session generic clarification never claims an old problem exists
+  ---
+  duration_ms: 4.088983
+  type: 'test'
+  ...
+# Subtest: active operational case still gets contextual follow-up clarification
+ok 592 - active operational case still gets contextual follow-up clarification
+  ---
+  duration_ms: 0.720962
+  type: 'test'
+  ...
+# Subtest: low confidence greeting/general in fresh session returns neutral reply and no active case
+ok 593 - low confidence greeting/general in fresh session returns neutral reply and no active case
+  ---
+  duration_ms: 4.324297
+  type: 'test'
+  ...
+# Subtest: AI Agent previous intent uses post-boundary state and session-scoped ticket
+ok 594 - AI Agent previous intent uses post-boundary state and session-scoped ticket
+  ---
+  duration_ms: 1.414184
+  type: 'test'
+  ...
+# Subtest: current-session AI context and bridge-ticket lookup are session scoped
+ok 595 - current-session AI context and bridge-ticket lookup are session scoped
+  ---
+  duration_ms: 1.349615
+  type: 'test'
+  ...
+# Subtest: Return to AI low-confidence answer binds to the last human CS field question
+ok 596 - Return to AI low-confidence answer binds to the last human CS field question
+  ---
+  duration_ms: 2.433932
+  type: 'test'
+  ...
+# Subtest: Return to AI "Udah bosku" continues the same WD context after human asked member to wait
+ok 597 - Return to AI "Udah bosku" continues the same WD context after human asked member to wait
+  ---
+  duration_ms: 5.610098
+  type: 'test'
+  ...
+# Subtest: angry member inherits DEPOSIT case instead of becoming a generic abuse complaint
+ok 598 - angry member inherits DEPOSIT case instead of becoming a generic abuse complaint
+  ---
+  duration_ms: 0.99473
+  type: 'test'
+  ...
+# Subtest: angry member inherits WITHDRAW case instead of becoming a generic abuse complaint
+ok 599 - angry member inherits WITHDRAW case instead of becoming a generic abuse complaint
+  ---
+  duration_ms: 0.487824
+  type: 'test'
+  ...
+# Subtest: explicit loss complaint remains LOSS even if an older WD case exists
+ok 600 - explicit loss complaint remains LOSS even if an older WD case exists
+  ---
+  duration_ms: 0.460565
+  type: 'test'
+  ...
+# Subtest: fresh session still has no inherited case
+ok 601 - fresh session still has no inherited case
+  ---
+  duration_ms: 1.281561
+  type: 'test'
+  ...
+# Subtest: agent prompt explicitly treats Return to AI as same-session continuation and anger as sentiment
+ok 602 - agent prompt explicitly treats Return to AI as same-session continuation and anger as sentiment
+  ---
+  duration_ms: 1.506919
+  type: 'test'
+  ...
+# Subtest: 01 multi customer messages in one snapshot are all processing candidates
+ok 603 - 01 multi customer messages in one snapshot are all processing candidates
+  ---
+  duration_ms: 1.691771
+  type: 'test'
+  ...
+# Subtest: 02 rapid messages receive durable PENDING record before debounce
+ok 604 - 02 rapid messages receive durable PENDING record before debounce
+  ---
+  duration_ms: 0.417328
+  type: 'test'
+  ...
+# Subtest: 03 same text with different message IDs is not text-deduplicated
+ok 605 - 03 same text with different message IDs is not text-deduplicated
+  ---
+  duration_ms: 0.164202
+  type: 'test'
+  ...
+# Subtest: 04 duplicate same provider event ID is idempotent
+ok 606 - 04 duplicate same provider event ID is idempotent
+  ---
+  duration_ms: 0.12746
+  type: 'test'
+  ...
+# Subtest: 05 WD initial issue is classified deterministically
+ok 607 - 05 WD initial issue is classified deterministically
+  ---
+  duration_ms: 2.127803
+  type: 'test'
+  ...
+# Subtest: 06 WD follow-up udah sejam remains contextual
+ok 608 - 06 WD follow-up udah sejam remains contextual
+  ---
+  duration_ms: 2.275124
+  type: 'test'
+  ...
+# Subtest: 07 WD follow-up masih blom remains contextual
+ok 609 - 07 WD follow-up masih blom remains contextual
+  ---
+  duration_ms: 0.41217
+  type: 'test'
+  ...
+# Subtest: 08 WD follow-up gimana bos remains contextual
+ok 610 - 08 WD follow-up gimana bos remains contextual
+  ---
+  duration_ms: 0.255868
+  type: 'test'
+  ...
+# Subtest: 09 deposit follow-up binds to active deposit case
+ok 611 - 09 deposit follow-up binds to active deposit case
+  ---
+  duration_ms: 0.313498
+  type: 'test'
+  ...
+# Subtest: 10 WAITING_HUMAN is allowed to reply
+ok 612 - 10 WAITING_HUMAN is allowed to reply
+  ---
+  duration_ms: 0.570809
+  type: 'test'
+  ...
+# Subtest: 11 WAITING_MEMBER_ID is allowed to reply
+ok 613 - 11 WAITING_MEMBER_ID is allowed to reply
+  ---
+  duration_ms: 0.317053
+  type: 'test'
+  ...
+# Subtest: 12 WAITING_PROOF is allowed to reply
+ok 614 - 12 WAITING_PROOF is allowed to reply
+  ---
+  duration_ms: 0.242922
+  type: 'test'
+  ...
+# Subtest: 13 HUMAN_ACTIVE is the agent-level silent state
+ok 615 - 13 HUMAN_ACTIVE is the agent-level silent state
+  ---
+  duration_ms: 0.0943
+  type: 'test'
+  ...
+# Subtest: 14 withdraw typos and slang normalize correctly
+ok 616 - 14 withdraw typos and slang normalize correctly
+  ---
+  duration_ms: 0.203491
+  type: 'test'
+  ...
+# Subtest: 15 deposit typos and slang normalize correctly
+ok 617 - 15 deposit typos and slang normalize correctly
+  ---
+  duration_ms: 0.10023
+  type: 'test'
+  ...
+# Subtest: 16 low confidence produces safe contextual clarification, never silence
+ok 618 - 16 low confidence produces safe contextual clarification, never silence
+  ---
+  duration_ms: 0.131446
+  type: 'test'
+  ...
+# Subtest: 17 existing Telegram ticket prevents duplicate create and permits update
+ok 619 - 17 existing Telegram ticket prevents duplicate create and permits update
+  ---
+  duration_ms: 0.210568
+  type: 'test'
+  ...
+# Subtest: 18 OpenAI timeout/429/5xx can propagate into durable retry
+ok 620 - 18 OpenAI timeout/429/5xx can propagate into durable retry
+  ---
+  duration_ms: 0.126155
+  type: 'test'
+  ...
+# Subtest: 19 LiveChat send failure is retryable and input is not marked DONE in catch
+ok 621 - 19 LiveChat send failure is retryable and input is not marked DONE in catch
+  ---
+  duration_ms: 0.110462
+  type: 'test'
+  ...
+# Subtest: 20 stale PROCESSING customer event is recoverable
+ok 622 - 20 stale PROCESSING customer event is recoverable
+  ---
+  duration_ms: 0.96468
+  type: 'test'
+  ...
+# Subtest: 21 active inbox endpoint only returns confirmed active rows
+ok 623 - 21 active inbox endpoint only returns confirmed active rows
+  ---
+  duration_ms: 0.145191
+  type: 'test'
+  ...
+# Subtest: 22 confirmed closed conversation is removed from active inbox state
+ok 624 - 22 confirmed closed conversation is removed from active inbox state
+  ---
+  duration_ms: 0.107792
+  type: 'test'
+  ...
+# Subtest: 23 confirmed close snapshots session into archives
+ok 625 - 23 confirmed close snapshots session into archives
+  ---
+  duration_ms: 0.116991
+  type: 'test'
+  ...
+# Subtest: 24 invisible active is not enough to create legacy archive
+ok 626 - 24 invisible active is not enough to create legacy archive
+  ---
+  duration_ms: 0.096826
+  type: 'test'
+  ...
+# Subtest: 25 same member returning on a new thread creates a new session
+ok 627 - 25 same member returning on a new thread creates a new session
+  ---
+  duration_ms: 0.075827
+  type: 'test'
+  ...
+# Subtest: 26 prior session is closed and archived on new session boundary
+ok 628 - 26 prior session is closed and archived on new session boundary
+  ---
+  duration_ms: 0.090585
+  type: 'test'
+  ...
+# Subtest: 27 old history does not enter new-session AI context
+ok 629 - 27 old history does not enter new-session AI context
+  ---
+  duration_ms: 0.073335
+  type: 'test'
+  ...
+# Subtest: 28 closed session cannot reopen from stale active event on same thread
+ok 630 - 28 closed session cannot reopen from stale active event on same thread
+  ---
+  duration_ms: 0.074623
+  type: 'test'
+  ...
+# Subtest: 29 a genuinely new LiveChat thread is an explicit session boundary
+ok 631 - 29 a genuinely new LiveChat thread is an explicit session boundary
+  ---
+  duration_ms: 0.094176
+  type: 'test'
+  ...
+# Subtest: 30 conversations order follows LiveChat inbox rank
+ok 632 - 30 conversations order follows LiveChat inbox rank
+  ---
+  duration_ms: 0.052101
+  type: 'test'
+  ...
+# Subtest: 31 new LiveChat activity can update inbox rank independently of DB updated_at
+ok 633 - 31 new LiveChat activity can update inbox rank independently of DB updated_at
+  ---
+  duration_ms: 0.079429
+  type: 'test'
+  ...
+# Subtest: 32 closed conversation clears LiveChat rank
+ok 634 - 32 closed conversation clears LiveChat rank
+  ---
+  duration_ms: 0.071593
+  type: 'test'
+  ...
+# Subtest: 33 durable ingress claims at most one job per chat/session ordering key
+ok 635 - 33 durable ingress claims at most one job per chat/session ordering key
+  ---
+  duration_ms: 0.133341
+  type: 'test'
+  ...
+# Subtest: 34 concurrency is bounded without a global queue lock
+ok 636 - 34 concurrency is bounded without a global queue lock
+  ---
+  duration_ms: 0.074977
+  type: 'test'
+  ...
+# Subtest: 35 Telegram duplicate update/callback is idempotent
+ok 637 - 35 Telegram duplicate update/callback is idempotent
+  ---
+  duration_ms: 0.116334
+  type: 'test'
+  ...
+# Subtest: 36 existing human request has one bridge ticket and no duplicate
+ok 638 - 36 existing human request has one bridge ticket and no duplicate
+  ---
+  duration_ms: 0.105941
+  type: 'test'
+  ...
+# Subtest: 37 AI agent retrieves Knowledge from dashboard/database source
+ok 639 - 37 AI agent retrieves Knowledge from dashboard/database source
+  ---
+  duration_ms: 0.099684
+  type: 'test'
+  ...
+# Subtest: 38 AI agent retrieves Rules from dashboard/database source
+ok 640 - 38 AI agent retrieves Rules from dashboard/database source
+  ---
+  duration_ms: 0.137057
+  type: 'test'
+  ...
+# Subtest: 39 AI agent retrieves Responses from dedicated response source
+ok 641 - 39 AI agent retrieves Responses from dedicated response source
+  ---
+  duration_ms: 0.113427
+  type: 'test'
+  ...
+# Subtest: 40 AI agent retrieves approved learning and approved corrections separately
+ok 642 - 40 AI agent retrieves approved learning and approved corrections separately
+  ---
+  duration_ms: 0.239279
+  type: 'test'
+  ...
+# Subtest: 41 action validator exposes only final allowlist
+ok 643 - 41 action validator exposes only final allowlist
+  ---
+  duration_ms: 0.614622
+  type: 'test'
+  ...
+# Subtest: 42 known member ID is never requested again by agent validator
+ok 644 - 42 known member ID is never requested again by agent validator
+  ---
+  duration_ms: 0.191815
+  type: 'test'
+  ...
+# Subtest: 43 proof already received is never requested again by agent validator
+ok 645 - 43 proof already received is never requested again by agent validator
+  ---
+  duration_ms: 0.325956
+  type: 'test'
+  ...
+# Subtest: 44 structured context contains session, case, ticket, sources, recent messages and profile
+ok 646 - 44 structured context contains session, case, ticket, sources, recent messages and profile
+  ---
+  duration_ms: 0.203427
+  type: 'test'
+  ...
+# Subtest: 45 migrations are additive/idempotent for session, event ledger and outbound idempotency
+ok 647 - 45 migrations are additive/idempotent for session, event ledger and outbound idempotency
+  ---
+  duration_ms: 0.075962
+  type: 'test'
+  ...
+# Subtest: 46 secrets are not embedded in AI-agent implementation
+ok 648 - 46 secrets are not embedded in AI-agent implementation
+  ---
+  duration_ms: 0.238946
+  type: 'test'
+  ...
+# Subtest: 47 production OpenAI agent path returns final allowlist action schema directly
+ok 649 - 47 production OpenAI agent path returns final allowlist action schema directly
+  ---
+  duration_ms: 0.992705
+  type: 'test'
+  ...
+# Subtest: v1.33.1 natural WD and deposit requests do not fall back to GENERAL
+ok 650 - v1.33.1 natural WD and deposit requests do not fall back to GENERAL
+  ---
+  duration_ms: 4.803723
+  type: 'test'
+  ...
+# Subtest: v1.33.1 access game reset and loss typos remain distinct intents
+ok 651 - v1.33.1 access game reset and loss typos remain distinct intents
+  ---
+  duration_ms: 0.461916
+  type: 'test'
+  ...
+# Subtest: v1.33.1 account-close language is not misclassified as forgot password
+ok 652 - v1.33.1 account-close language is not misclassified as forgot password
+  ---
+  duration_ms: 0.277966
+  type: 'test'
+  ...
+# Subtest: v1.33.1 first bonus/WD message can carry member ID inline
+ok 653 - v1.33.1 first bonus/WD message can carry member ID inline
+  ---
+  duration_ms: 3.251439
+  type: 'test'
+  ...
+# Subtest: v1.33.1 ordinary words profanity and workflow text are never user IDs
+ok 654 - v1.33.1 ordinary words profanity and workflow text are never user IDs
+  ---
+  duration_ms: 2.126331
+  type: 'test'
+  ...
+# Subtest: v1.33.1 known member ID persists through the whole current session and is not asked again
+ok 655 - v1.33.1 known member ID persists through the whole current session and is not asked again
+  ---
+  duration_ms: 2.856347
+  type: 'test'
+  ...
+# Subtest: v1.33.1 bonus ID supplied in the claim remains known on later turns
+ok 656 - v1.33.1 bonus ID supplied in the claim remains known on later turns
+  ---
+  duration_ms: 0.39758
+  type: 'test'
+  ...
+# Subtest: v1.33.1 anger is sentiment: active DP/WD context wins, explicit loss stays loss
+ok 657 - v1.33.1 anger is sentiment: active DP/WD context wins, explicit loss stays loss
+  ---
+  duration_ms: 1.702979
+  type: 'test'
+  ...
+# Subtest: v1.33.1 AI prompt enforces full current-session known-field memory
+ok 658 - v1.33.1 AI prompt enforces full current-session known-field memory
+  ---
+  duration_ms: 2.169111
+  type: 'test'
+  ...
+# Subtest: v1.33.1 typo normalizer covers the requested high-frequency variants
+ok 659 - v1.33.1 typo normalizer covers the requested high-frequency variants
+  ---
+  duration_ms: 0.747069
+  type: 'test'
+  ...
+# Subtest: complaint intent catches loss/frustration without gambling encouragement
+ok 660 - complaint intent catches loss/frustration without gambling encouragement
+  ---
+  duration_ms: 3.161106
+  type: 'test'
+  ...
+# Subtest: human request UI contains operational quick actions
+ok 661 - human request UI contains operational quick actions
+  ---
+  duration_ms: 1.490507
+  type: 'test'
+  ...
+# Subtest: human drafts survive live refresh
+ok 662 - human drafts survive live refresh
+  ---
+  duration_ms: 0.779904
+  type: 'test'
+  ...
+# Subtest: telegram bridge supports ticket-code fallback and delivery failure tracking
+ok 663 - telegram bridge supports ticket-code fallback and delivery failure tracking
+  ---
+  duration_ms: 0.977914
+  type: 'test'
+  ...
+# Subtest: WD replacement workflow returns member bank data to WD human bridge
+ok 664 - WD replacement workflow returns member bank data to WD human bridge
+  ---
+  duration_ms: 1.382176
+  type: 'test'
+  ...
+# Subtest: telegram tickets expose inline operational buttons
+ok 665 - telegram tickets expose inline operational buttons
+  ---
+  duration_ms: 0.707826
+  type: 'test'
+  ...
+# Subtest: bonus umum selalu masuk jalur bonus staff
+ok 666 - bonus umum selalu masuk jalur bonus staff
+  ---
+  duration_ms: 3.090263
+  type: 'test'
+  ...
+# Subtest: deposit workflow mewajibkan user ID dan bukti transfer
+ok 667 - deposit workflow mewajibkan user ID dan bukti transfer
+  ---
+  duration_ms: 1.489881
+  type: 'test'
+  ...
+# Subtest: reset password mengumpulkan jenis nama dan nomor rekening
+ok 668 - reset password mengumpulkan jenis nama dan nomor rekening
+  ---
+  duration_ms: 1.031306
+  type: 'test'
+  ...
+# Subtest: WD selalu diarahkan ke human request
+ok 669 - WD selalu diarahkan ke human request
+  ---
+  duration_ms: 1.027242
+  type: 'test'
+  ...
+# Subtest: Deposit lengkap masuk Telegram dan punya tombol status DP
+ok 670 - Deposit lengkap masuk Telegram dan punya tombol status DP
+  ---
+  duration_ms: 2.030669
+  type: 'test'
+  ...
+# Subtest: manual human reply jadi kandidat belajar dan pola aman berulang dapat auto approve
+ok 671 - manual human reply jadi kandidat belajar dan pola aman berulang dapat auto approve
+  ---
+  duration_ms: 1.270712
+  type: 'test'
+  ...
+# Subtest: teguran AI langsung aktif sebagai koreksi approved
+ok 672 - teguran AI langsung aktif sebagai koreksi approved
+  ---
+  duration_ms: 2.647507
+  type: 'test'
+  ...
+# Subtest: dashboard menyediakan menu Belajar dari CS
+ok 673 - dashboard menyediakan menu Belajar dari CS
+  ---
+  duration_ms: 0.440532
+  type: 'test'
+  ...
+# Subtest: sandi/sandiku dinormalisasi sebagai password
+ok 674 - sandi/sandiku dinormalisasi sebagai password
+  ---
+  duration_ms: 4.6768
+  type: 'test'
+  ...
+# Subtest: permintaan cek sandi dikenali sebagai reset password
+ok 675 - permintaan cek sandi dikenali sebagai reset password
+  ---
+  duration_ms: 0.86819
+  type: 'test'
+  ...
+# Subtest: reset password tidak meminta user ID dan langsung route setelah data rekening lengkap
+ok 676 - reset password tidak meminta user ID dan langsung route setelah data rekening lengkap
+  ---
+  duration_ms: 1.86636
+  type: 'test'
+  ...
+# Subtest: prompt AI melarang minta user ID pada forgot password dan menempatkan AI sebagai CS manusia
+ok 677 - prompt AI melarang minta user ID pada forgot password dan menempatkan AI sebagai CS manusia
+  ---
+  duration_ms: 0.637492
+  type: 'test'
+  ...
+# Subtest: bonus umum ditanya jenis bonus dulu
+ok 678 - bonus umum ditanya jenis bonus dulu
+  ---
+  duration_ms: 4.050157
+  type: 'test'
+  ...
+# Subtest: komplain kasar dan kalah punya intent khusus dan jawaban tenang
+ok 679 - komplain kasar dan kalah punya intent khusus dan jawaban tenang
+  ---
+  duration_ms: 1.76688
+  type: 'test'
+  ...
+# Subtest: unknown tidak dibalas asal, diarahkan ke Tanya Staff, dan member tetap mendapat holding reply
+ok 680 - unknown tidak dibalas asal, diarahkan ke Tanya Staff, dan member tetap mendapat holding reply
+  ---
+  duration_ms: 0.939476
+  type: 'test'
+  ...
+# Subtest: telegram group reset WD deposit bonus dan gangguan
+ok 681 - telegram group reset WD deposit bonus dan gangguan
+  ---
+  duration_ms: 0.345705
+  type: 'test'
+  ...
+# Subtest: AI prompt melarang janji kemenangan dan tebakan
+ok 682 - AI prompt melarang janji kemenangan dan tebakan
+  ---
+  duration_ms: 0.337464
+  type: 'test'
+  ...
+# Subtest: AI prompt requires chronological context digestion
+ok 683 - AI prompt requires chronological context digestion
+  ---
+  duration_ms: 1.764913
+  type: 'test'
+  ...
+# Subtest: long chats digest full stored history and keep recent context
+ok 684 - long chats digest full stored history and keep recent context
+  ---
+  duration_ms: 0.283635
+  type: 'test'
+  ...
+# Subtest: human CS learning stores context snapshot and style examples
+ok 685 - human CS learning stores context snapshot and style examples
+  ---
+  duration_ms: 0.204215
+  type: 'test'
+  ...
+# Subtest: unclear cases route to staff while member still receives safe holding reply
+ok 686 - unclear cases route to staff while member still receives safe holding reply
+  ---
+  duration_ms: 0.561404
+  type: 'test'
+  ...
+1..686
+# tests 686
+# suites 0
+# pass 686
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4526.397489

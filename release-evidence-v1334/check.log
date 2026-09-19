@@ -1,0 +1,5 @@
+
+> livechat-ai-railway@1.32.3 check
+> node scripts/check-all.mjs
+
+Syntax OK: 210 JS/MJS files
